@@ -14,6 +14,8 @@ public class Input {
         this.monthlyUpdates = monthlyUpdates;
     }
 
+    public Input(){}
+
     public int getNumberOfTurns() {
         return numberOfTurns;
     }

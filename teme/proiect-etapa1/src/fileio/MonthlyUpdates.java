@@ -4,39 +4,39 @@ import java.util.List;
 
 public class MonthlyUpdates {
     private List<ConsumerInput> newConsumers;
-    private List<CostChanges> costChanges;
+    private List<CostsChanges> costsChanges;
 
     public MonthlyUpdates() {
-        this.costChanges = null;
-        this.newConsumers = null;
+//        this.costChanges = null;
+//        this.newConsumers = null;
     }
 
-    public MonthlyUpdates(List<ConsumerInput> newConsumers, List<CostChanges> costChanges) {
+    public MonthlyUpdates(List<ConsumerInput> newConsumers, List<CostsChanges> costsChanges) {
         this.newConsumers = newConsumers;
-        this.costChanges = costChanges;
+        this.costsChanges = costsChanges;
     }
 
     public List<ConsumerInput> getNewConsumers() {
         return newConsumers;
     }
 
-    public List<CostChanges> getCostChanges() {
-        return costChanges;
+    public List<CostsChanges> getCostsChanges() {
+        return costsChanges;
     }
 
     public void setNewConsumers(List<ConsumerInput> newConsumers) {
         this.newConsumers = newConsumers;
     }
 
-    public void setCostChanges(List<CostChanges> costChanges) {
-        this.costChanges = costChanges;
+    public void setCostsChanges(List<CostsChanges> costChanges) {
+        this.costsChanges = costChanges;
     }
 
     @Override
     public String toString() {
         return "MonthlyUpdates{" +
                 "newConsumers=" + newConsumers +
-                ", costChanges=" + costChanges +
+                ", costsChanges=" + costsChanges +
                 '}';
     }
 }

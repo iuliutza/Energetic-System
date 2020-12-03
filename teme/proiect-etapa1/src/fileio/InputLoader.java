@@ -2,10 +2,17 @@ package fileio;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
 
-public final class InputLoader {
-    private final String inputPath;
+import java.io.File;
+import java.io.IOException;
 
-    public InputLoader(final String inputPath) {
+public class InputLoader {
+    private String inputPath;
+
+    public InputLoader(){
+        this.inputPath = null;
+    }
+
+    public InputLoader(String inputPath) {
         this.inputPath = inputPath;
     }
 
@@ -13,8 +20,15 @@ public final class InputLoader {
         return inputPath;
     }
 
-//    public Input readData(){
-//        ObjectMapper objectMapper = new ObjectMapper();
-//    }
+    public Input readData(String inputPath) throws IOException {
+        ObjectMapper objectMapper = new ObjectMapper();
+
+        File file = new File(inputPath);
+        //"/home/iulia/IdeaProjects/Project-etapa1/teme/proiect-etapa1/checker/resources/in/basic_1.json"
+
+        Input input = objectMapper.readValue(file, Input.class);
+        return input;
+
+    }
 
 }

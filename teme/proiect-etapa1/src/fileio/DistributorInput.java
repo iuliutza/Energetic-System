@@ -5,6 +5,8 @@ public class DistributorInput extends ShowEntity {
     private int initialInfrastructureCost;
     private int initialProductionCost;
 
+    public DistributorInput(){};
+
     public DistributorInput(int id, float initialBudget,
                             int contractLength,
                             int initialInfrastructureCost,

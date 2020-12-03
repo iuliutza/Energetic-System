@@ -4,6 +4,8 @@ public abstract class ShowEntity {
     private int id;
     private float initialBudget;
 
+    public ShowEntity(){}
+
     public ShowEntity(final int id, final float initialBudget) {
         this.id = id;
         this.initialBudget = initialBudget;
