@@ -31,4 +31,12 @@ public class MonthlyUpdates {
     public void setCostChanges(List<CostChanges> costChanges) {
         this.costChanges = costChanges;
     }
+
+    @Override
+    public String toString() {
+        return "MonthlyUpdates{" +
+                "newConsumers=" + newConsumers +
+                ", costChanges=" + costChanges +
+                '}';
+    }
 }

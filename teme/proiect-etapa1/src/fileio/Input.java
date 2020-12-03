@@ -37,4 +37,13 @@ public class Input {
     public void setMonthlyUpdates(List<MonthlyUpdates> monthlyUpdates) {
         this.monthlyUpdates = monthlyUpdates;
     }
+
+    @Override
+    public String toString() {
+        return "Input{" +
+                "numberOfTurns=" + numberOfTurns +
+                ", initialData=" + initialData +
+                ", monthlyUpdates=" + monthlyUpdates +
+                '}';
+    }
 }

@@ -31,4 +31,12 @@ public class InitialData {
     public void setDistributors(List<DistributorInput> distributors) {
         this.distributors = distributors;
     }
+
+    @Override
+    public String toString() {
+        return "InitialData{" +
+                "consumers=" + consumers +
+                ", distributors=" + distributors +
+                '}';
+    }
 }

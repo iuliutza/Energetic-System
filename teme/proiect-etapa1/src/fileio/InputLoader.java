@@ -1,5 +1,7 @@
 package fileio;
 
+import com.fasterxml.jackson.databind.ObjectMapper;
+
 public final class InputLoader {
     private final String inputPath;
 
@@ -12,7 +14,7 @@ public final class InputLoader {
     }
 
 //    public Input readData(){
-//
+//        ObjectMapper objectMapper = new ObjectMapper();
 //    }
 
 }
