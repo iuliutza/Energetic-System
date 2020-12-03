@@ -1,11 +1,11 @@
 package fileio;
 
-public final class CostChanges {
-    private final int id;
-    private final float infrastructureCost;
-    private final float productionCost;
+public class CostChanges {
+    private int id;
+    private float infrastructureCost;
+    private float productionCost;
 
-    public CostChanges(final int id, final float infrastructureCost, final float productionCost) {
+    public CostChanges(int id, float infrastructureCost, float productionCost) {
         this.id = id;
         this.infrastructureCost = infrastructureCost;
         this.productionCost = productionCost;
@@ -21,6 +21,18 @@ public final class CostChanges {
 
     public float getProductionCost() {
         return productionCost;
+    }
+
+    public void setId(int id) {
+        this.id = id;
+    }
+
+    public void setInfrastructureCost(float infrastructureCost) {
+        this.infrastructureCost = infrastructureCost;
+    }
+
+    public void setProductionCost(float productionCost) {
+        this.productionCost = productionCost;
     }
 
     @Override

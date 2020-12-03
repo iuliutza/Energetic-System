@@ -3,7 +3,7 @@ public class Contract {
     private float price;
     private int remainedContractMonths;
 
-    public Contract(){
+    public Contract() {
         consumerId = 0;
         price = 0;
         remainedContractMonths = 0;

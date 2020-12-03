@@ -3,8 +3,8 @@ package fileio;
 import java.util.List;
 
 public class MonthlyUpdates {
-    private final List<ConsumerInput> newConsumers;
-    private final List<CostChanges> costChanges;
+    private List<ConsumerInput> newConsumers;
+    private List<CostChanges> costChanges;
 
     public MonthlyUpdates() {
         this.costChanges = null;
@@ -22,5 +22,13 @@ public class MonthlyUpdates {
 
     public List<CostChanges> getCostChanges() {
         return costChanges;
+    }
+
+    public void setNewConsumers(List<ConsumerInput> newConsumers) {
+        this.newConsumers = newConsumers;
+    }
+
+    public void setCostChanges(List<CostChanges> costChanges) {
+        this.costChanges = costChanges;
     }
 }

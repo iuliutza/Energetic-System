@@ -28,5 +28,22 @@ Starting audit...
 [ERROR] /home/iulia/IdeaProjects/Project-etapa1/teme/proiect-etapa1/./src/fileio/ConsumerInput.java:18:50: '+' should be on a new line. [OperatorWrap]
 [ERROR] /home/iulia/IdeaProjects/Project-etapa1/teme/proiect-etapa1/./src/fileio/ConsumerInput.java:19:41: '+' should be on a new line. [OperatorWrap]
 [ERROR] /home/iulia/IdeaProjects/Project-etapa1/teme/proiect-etapa1/./src/fileio/ConsumerInput.java:20:63: '+' should be on a new line. [OperatorWrap]
+[ERROR] /home/iulia/IdeaProjects/Project-etapa1/teme/proiect-etapa1/./src/fileio/CostChanges.java:28:31: '+' should be on a new line. [OperatorWrap]
+[ERROR] /home/iulia/IdeaProjects/Project-etapa1/teme/proiect-etapa1/./src/fileio/CostChanges.java:29:28: '+' should be on a new line. [OperatorWrap]
+[ERROR] /home/iulia/IdeaProjects/Project-etapa1/teme/proiect-etapa1/./src/fileio/CostChanges.java:30:62: '+' should be on a new line. [OperatorWrap]
+[ERROR] /home/iulia/IdeaProjects/Project-etapa1/teme/proiect-etapa1/./src/fileio/CostChanges.java:31:54: '+' should be on a new line. [OperatorWrap]
+[ERROR] /home/iulia/IdeaProjects/Project-etapa1/teme/proiect-etapa1/./src/fileio/InitialData.java:14:24: Parameter consumers should be final. [FinalParameters]
+[ERROR] /home/iulia/IdeaProjects/Project-etapa1/teme/proiect-etapa1/./src/fileio/InitialData.java:14:55: Parameter distributors should be final. [FinalParameters]
+[ERROR] /home/iulia/IdeaProjects/Project-etapa1/teme/proiect-etapa1/./src/fileio/MonthlyUpdates.java:14:27: Parameter newConsumers should be final. [FinalParameters]
+[ERROR] /home/iulia/IdeaProjects/Project-etapa1/teme/proiect-etapa1/./src/fileio/MonthlyUpdates.java:14:61: Parameter costChanges should be final. [FinalParameters]
+[ERROR] /home/iulia/IdeaProjects/Project-etapa1/teme/proiect-etapa1/./src/fileio/MonthlyUpdates.java:19:5: Class 'MonthlyUpdates' looks like designed for extension (can be subclassed), but the method 'getNewConsumers' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'MonthlyUpdates' final or making the method 'getNewConsumers' static/final/abstract/empty, or adding allowed annotation for the method. [DesignForExtension]
+[ERROR] /home/iulia/IdeaProjects/Project-etapa1/teme/proiect-etapa1/./src/fileio/MonthlyUpdates.java:23:5: Class 'MonthlyUpdates' looks like designed for extension (can be subclassed), but the method 'getCostChanges' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'MonthlyUpdates' final or making the method 'getCostChanges' static/final/abstract/empty, or adding allowed annotation for the method. [DesignForExtension]
+[ERROR] /home/iulia/IdeaProjects/Project-etapa1/teme/proiect-etapa1/./src/fileio/DistributorInput.java:32:36: '+' should be on a new line. [OperatorWrap]
+[ERROR] /home/iulia/IdeaProjects/Project-etapa1/teme/proiect-etapa1/./src/fileio/DistributorInput.java:33:52: '+' should be on a new line. [OperatorWrap]
+[ERROR] /home/iulia/IdeaProjects/Project-etapa1/teme/proiect-etapa1/./src/fileio/DistributorInput.java:34:76: '+' should be on a new line. [OperatorWrap]
+[ERROR] /home/iulia/IdeaProjects/Project-etapa1/teme/proiect-etapa1/./src/fileio/DistributorInput.java:35:68: '+' should be on a new line. [OperatorWrap]
+[ERROR] /home/iulia/IdeaProjects/Project-etapa1/teme/proiect-etapa1/./src/fileio/DistributorInput.java:36:40: '+' is not preceded with whitespace. [WhitespaceAround]
+[ERROR] /home/iulia/IdeaProjects/Project-etapa1/teme/proiect-etapa1/./src/fileio/DistributorInput.java:36:40: '+' should be on a new line. [OperatorWrap]
+[ERROR] /home/iulia/IdeaProjects/Project-etapa1/teme/proiect-etapa1/./src/fileio/DistributorInput.java:37:63: '+' should be on a new line. [OperatorWrap]
 Audit done.
-Checkstyle ends with 29 errors.
+Checkstyle ends with 46 errors.

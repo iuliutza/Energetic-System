@@ -2,9 +2,9 @@ package fileio;
 
 import java.util.List;
 
-public final class InitialData {
-    private final List<ConsumerInput> consumers;
-    private final List<DistributorInput> distributors;
+public class InitialData {
+    private List<ConsumerInput> consumers;
+    private List<DistributorInput> distributors;
 
     public InitialData() {
         consumers = null;
@@ -22,5 +22,13 @@ public final class InitialData {
 
     public List<DistributorInput> getDistributors() {
         return distributors;
+    }
+
+    public void setConsumers(List<ConsumerInput> consumers) {
+        this.consumers = consumers;
+    }
+
+    public void setDistributors(List<DistributorInput> distributors) {
+        this.distributors = distributors;
     }
 }

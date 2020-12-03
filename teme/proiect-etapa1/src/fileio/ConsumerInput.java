@@ -1,15 +1,19 @@
 package fileio;
 
-public final class ConsumerInput extends ShowEntity{
-    private final float monthlyIncome;
+public class ConsumerInput extends ShowEntity{
+    private float monthlyIncome;
 
-    public ConsumerInput(final int id, final float initialBudget, final float monthlyIncome) {
+    public ConsumerInput(int id, float initialBudget, float monthlyIncome) {
         super(id, initialBudget);
         this.monthlyIncome = monthlyIncome;
     }
 
     public float getMonthlyIncome() {
         return monthlyIncome;
+    }
+
+    public void setMonthlyIncome(float monthlyIncome) {
+        this.monthlyIncome = monthlyIncome;
     }
 
     @Override

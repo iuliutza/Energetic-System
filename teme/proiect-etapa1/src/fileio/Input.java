@@ -2,13 +2,13 @@ package fileio;
 
 import java.util.List;
 
-public final class Input {
-    private final int numberOfTurns;
-    private final InitialData initialData;
-    private final List<MonthlyUpdates> monthlyUpdates;
+public class Input {
+    private int numberOfTurns;
+    private InitialData initialData;
+    private List<MonthlyUpdates> monthlyUpdates;
 
-    public Input(final int numberOfTurns, final InitialData initialData,
-                 final List<MonthlyUpdates> monthlyUpdates) {
+    public Input(int numberOfTurns, InitialData initialData,
+                 List<MonthlyUpdates> monthlyUpdates) {
         this.numberOfTurns = numberOfTurns;
         this.initialData = initialData;
         this.monthlyUpdates = monthlyUpdates;
@@ -24,5 +24,17 @@ public final class Input {
 
     public List<MonthlyUpdates> getMonthlyUpdates() {
         return monthlyUpdates;
+    }
+
+    public void setNumberOfTurns(int numberOfTurns) {
+        this.numberOfTurns = numberOfTurns;
+    }
+
+    public void setInitialData(InitialData initialData) {
+        this.initialData = initialData;
+    }
+
+    public void setMonthlyUpdates(List<MonthlyUpdates> monthlyUpdates) {
+        this.monthlyUpdates = monthlyUpdates;
     }
 }
