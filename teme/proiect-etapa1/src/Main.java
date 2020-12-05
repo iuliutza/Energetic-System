@@ -1,6 +1,8 @@
+import com.fasterxml.jackson.databind.ObjectMapper;
 import fileio.Input;
 import fileio.InputLoader;
 
+import java.io.File;
 import java.io.IOException;
 
 public class Main {
@@ -10,9 +12,11 @@ public class Main {
                 + args[0];
         System.out.println(pathIn);
 
-        String pathOut = "" + args[1];
+        String pathOut = "/home/iulia/IdeaProjects/Project-etapa1/teme/proiect-etapa1/src/out/" + args[1];
 
         System.out.println(pathOut);
+
+        action(pathIn, pathOut);
 
 
     }
@@ -21,6 +25,8 @@ public class Main {
         InputLoader inputLoader = new InputLoader(fileIn);
         Input input = inputLoader.readData(fileIn);
 
+        ObjectMapper mapper = new ObjectMapper();
+        mapper.writeValue(new File(fileOut), input);
         System.out.println(input);
     }
 }
