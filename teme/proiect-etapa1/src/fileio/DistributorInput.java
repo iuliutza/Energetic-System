@@ -2,15 +2,15 @@ package fileio;
 
 public class DistributorInput extends ShowEntity {
     private int contractLength;
-    private float initialInfrastructureCost;
-    private float initialProductionCost;
+    private long initialInfrastructureCost;
+    private long initialProductionCost;
 
     public DistributorInput(){};
 
-    public DistributorInput(int id, float initialBudget,
+    public DistributorInput(int id, long initialBudget,
                             int contractLength,
-                            float initialInfrastructureCost,
-                            float initialProductionCost) {
+                            long initialInfrastructureCost,
+                            long initialProductionCost) {
         super(id, initialBudget);
         this.contractLength = contractLength;
         this.initialInfrastructureCost = initialInfrastructureCost;
@@ -21,11 +21,11 @@ public class DistributorInput extends ShowEntity {
         return contractLength;
     }
 
-    public float getInitialInfrastructureCost() {
+    public long getInitialInfrastructureCost() {
         return initialInfrastructureCost;
     }
 
-    public float getInitialProductionCost() {
+    public long getInitialProductionCost() {
         return initialProductionCost;
     }
 

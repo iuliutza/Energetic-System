@@ -7,8 +7,7 @@ public class MonthlyUpdates {
     private List<CostsChanges> costsChanges;
 
     public MonthlyUpdates() {
-//        this.costChanges = null;
-//        this.newConsumers = null;
+
     }
 
     public MonthlyUpdates(List<ConsumerInput> newConsumers, List<CostsChanges> costsChanges) {

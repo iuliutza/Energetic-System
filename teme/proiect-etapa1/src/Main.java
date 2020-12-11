@@ -1,3 +1,4 @@
+import com.fasterxml.jackson.core.JsonGenerator;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import fileio.CostsChanges;
 import fileio.Input;
@@ -109,6 +110,8 @@ public class  Main {
                             distributor.getNoOfClients());
                 }
             }
+            //System.out.println(consumers.get(1).getContract().getRemainedContractMonths());
+
 
             int id;
             //consumers receive monthly income
@@ -188,7 +191,10 @@ public class  Main {
 
         Output output = new Output(outputConsumers, outputDistributors);
         ObjectMapper mapper = new ObjectMapper();
+        //mapper.configure(JsonGenerator.Feature.WRITE_NUMBERS_AS_STRINGS, true);
+
         mapper.writerWithDefaultPrettyPrinter().writeValue(new File(pathOut), output);
+//        mapper.writerWithDefaultPrettyPrinter().writeValue(new File(args[1]), output);
 
     }
 }

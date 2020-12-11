@@ -1,14 +1,16 @@
 package ouputClasses;
 
+import fileio.Input;
+
 public class ConsumerOutput {
     private int id;
     private boolean isBankrupt;
-    private float budget;
+    private long budget;
 
     public ConsumerOutput(int id, boolean isBankrupt, float budget) {
         this.id = id;
         this.isBankrupt = isBankrupt;
-        this.budget =  budget;
+        this.budget =  (long)budget;
     }
 
     public int getId() {
@@ -32,7 +34,7 @@ public class ConsumerOutput {
     }
 
     public void setBudget(float budget) {
-        this.budget = budget;
+        this.budget = (long) budget;
     }
 
     @Override

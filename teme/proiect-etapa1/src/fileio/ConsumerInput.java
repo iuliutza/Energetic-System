@@ -1,20 +1,20 @@
 package fileio;
 
 public class ConsumerInput extends ShowEntity{
-    private float monthlyIncome;
+    private long monthlyIncome;
 
     public ConsumerInput(){super();}
 
-    public ConsumerInput(int id, float initialBudget, float monthlyIncome) {
+    public ConsumerInput(int id, long initialBudget, long monthlyIncome) {
         super(id, initialBudget);
         this.monthlyIncome = monthlyIncome;
     }
 
-    public float getMonthlyIncome() {
+    public long getMonthlyIncome() {
         return monthlyIncome;
     }
 
-    public void setMonthlyIncome(float monthlyIncome) {
+    public void setMonthlyIncome(long monthlyIncome) {
         this.monthlyIncome = monthlyIncome;
     }
 

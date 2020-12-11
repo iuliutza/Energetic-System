@@ -3,14 +3,14 @@ package working;
 public class DistributorFactory extends AbstractFactory{
 
     @Override
-    public Consumer createConsumer(int id, float budget, float monthlyIncome) {
+    public Consumer createConsumer(int id, long budget, long monthlyIncome) {
         return null;
     }
 
     @Override
-    public Distributor createDistributor(int id, float budget, int contractLength, float pCost, float iCost) {
+    public Distributor createDistributor(int id, long budget, int contractLength, long pCost, long iCost) {
         return new Distributor(id, budget, contractLength, pCost, iCost);
-//        int id, float budget, int contractLength, float pCost, float iCost
+//        int id, long budget, int contractLength, long pCost, long iCost
     }
 
 

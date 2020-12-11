@@ -3,13 +3,13 @@ package working;
 public class ConsumerFactory extends AbstractFactory{
 
     @Override
-    public Consumer createConsumer(int id, float budget, float monthlyIncome) {
+    public Consumer createConsumer(int id, long budget, long monthlyIncome) {
         return new Consumer(id,budget,monthlyIncome);
-//        int id, float budget, float monthlyIncome);
+//        int id, long budget, long monthlyIncome);
     }
 
     @Override
-    public Distributor createDistributor(int id, float budget, int contractLength, float pCost, float iCost) {
+    public Distributor createDistributor(int id, long budget, int contractLength, long pCost, long iCost) {
         return null;
     }
 

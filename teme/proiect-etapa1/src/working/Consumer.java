@@ -3,31 +3,31 @@ package working;
 import java.util.List;
 
 public class Consumer extends Entity implements ConsumerInterface{
-    private float monthlyIncome;
-    private float penalty;
+    private long monthlyIncome;
+    private long penalty;
     private ClientContract contract = new ClientContract();
 
     public Consumer() { super(); }
 
-    public Consumer(int id, float budget, float monthlyIncome) {
+    public Consumer(int id, long budget, long monthlyIncome) {
         super(id, budget);
         this.monthlyIncome = monthlyIncome;
         penalty = 0;
     }
 
-    public float getMonthlyIncome() {
+    public long getMonthlyIncome() {
         return monthlyIncome;
     }
 
-    public void setMonthlyIncome(float monthlyIncome) {
+    public void setMonthlyIncome(long monthlyIncome) {
         this.monthlyIncome = monthlyIncome;
     }
 
-    public float getPenalty() {
+    public long getPenalty() {
         return penalty;
     }
 
-    public void setPenalty(float penalty) {
+    public void setPenalty(long penalty) {
         this.penalty = penalty;
     }
 
@@ -56,28 +56,37 @@ public class Consumer extends Entity implements ConsumerInterface{
         this.setBudget(this.getBudget() + monthlyIncome);
     }
 
-    public void giveRate(List<Distributor> distributors, float price){
-        for(Distributor distributor : distributors) {
-            if(this.contract.getDistributorId() == distributor.getId()) {
+    public void giveRate(Distributor distributor, long price){
                 distributor.setBudget(distributor.getBudget() + price);
-            }
-        }
     }
 
 
     @Override
     public void payRate(List<Distributor> distributors) {
 
-        float diff = this.getBudget() - this.contract.getPrice();
+        long diff = this.getBudget() - this.contract.getPrice();
+        int id = -1;
+        //find the distributor
+        for(Distributor distributor : distributors) {
+            if(this.contract.getDistributorId() == distributor.getId()) {
+                id = distributor.getId();
+            }
+        }
 
         if( diff <= 0 && this.penalty == 0) {
             this.penalty++;
             this.contract.setRemainedContractMonths(this.contract.getRemainedContractMonths()-1);
+            //decrease number of months in the distributor contract as well
+            for(int i = 0; i < distributors.get(id).getContracts().size(); i++) {
+                if(distributors.get(id).getContracts().get(i).getConsumerId() == this.getId())
+                    distributors.get(id).getContracts().get(i).setRemainedContractMonths(
+                            this.contract.getRemainedContractMonths());
+            }
             return;
         }
 
         if(penalty == 1) {
-            float price = Math.round(Math.floor(this.contract.getPrice() * 1.2)
+            long price = Math.round(Math.floor(this.contract.getPrice() * 1.2)
                     + this.contract.getPrice());
 
             if((this.getBudget() - price) <= 0) {
@@ -86,16 +95,21 @@ public class Consumer extends Entity implements ConsumerInterface{
             }
 
             this.setBudget(this.getBudget() - price);
-            this.giveRate(distributors,price);
+            this.giveRate(distributors.get(id),price);
             this.penalty--;
         }
 
         if(diff > 0 && this.penalty == 0) {
             this.setBudget(this.getBudget() - this.contract.getPrice());
-            this.giveRate(distributors, this.contract.getPrice());
+            this.giveRate(distributors.get(id), this.contract.getPrice());
         }
 
         this.contract.setRemainedContractMonths(this.contract.getRemainedContractMonths()-1);
+        for(int i = 0; i < distributors.get(id).getContracts().size(); i++) {
+            if(distributors.get(id).getContracts().get(i).getConsumerId() == this.getId())
+                distributors.get(id).getContracts().get(i).setRemainedContractMonths(
+                        this.contract.getRemainedContractMonths());
+        }
 
     }
 
@@ -104,7 +118,7 @@ public class Consumer extends Entity implements ConsumerInterface{
     @Override
     public int buildContract(List<Distributor> distributors) { //cauta distribuitorul cu cel mai mic pret la contract
         //si completeaza contractul din clasa ClientContract cu datele acestuia.
-        float min = 1000;
+        long min = 1000;
         int id1 = -1;
         for(Distributor distributor : distributors) {
             //daca sunt doi dstributori cu acelasi pret min se ia primul

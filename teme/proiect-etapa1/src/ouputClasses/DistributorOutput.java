@@ -5,13 +5,13 @@ import java.util.List;
 
 public class DistributorOutput {
     private int id;
-    private float budget;
+    private long budget;
     private boolean isBankrupt;
     private List<Contract> contracts;
 
     public DistributorOutput(int id, float budget, boolean isBankrupt, List<Contract> contracts) {
         this.id = id;
-        this.budget = budget;
+        this.budget = (long)budget;
         this.isBankrupt = isBankrupt;
         this.contracts = contracts;
     }
@@ -29,7 +29,7 @@ public class DistributorOutput {
     }
 
     public void setBudget(float budget) {
-        this.budget = budget;
+        this.budget = (long) budget;
     }
 
     public boolean getIsBankrupt() {

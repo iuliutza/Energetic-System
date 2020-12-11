@@ -7,8 +7,7 @@ public class InitialData {
     private List<DistributorInput> distributors;
 
     public InitialData() {
-//        consumers = null;
-//        distributors = null;
+
     }
 
     public InitialData(List<ConsumerInput> consumers, List<DistributorInput> distributors) {

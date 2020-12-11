@@ -2,12 +2,12 @@ package working;
 
 public class Contract {
     private int consumerId;
-    private float price;
+    private long price;
     private int remainedContractMonths;
 
     public Contract() {}
 
-    public Contract(int id, float price, int remainedContractMonths) {
+    public Contract(int id, long price, int remainedContractMonths) {
         this.consumerId = id;
         this.price = price;
         this.remainedContractMonths = remainedContractMonths;
@@ -30,11 +30,11 @@ public class Contract {
         this.consumerId = consumerId;
     }
 
-    public float getPrice() {
+    public long getPrice() {
         return price;
     }
 
-    public void setPrice(float price) {
+    public void setPrice(long price) {
         this.price = price;
     }
 

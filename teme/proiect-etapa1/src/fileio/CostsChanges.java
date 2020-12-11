@@ -2,12 +2,12 @@ package fileio;
 
 public class CostsChanges {
     private int id;
-    private float infrastructureCost;
-    private float productionCost;
+    private long infrastructureCost;
+    private long productionCost;
 
     public CostsChanges(){}
 
-    public CostsChanges(int id, float infrastructureCost, float productionCost) {
+    public CostsChanges(int id, long infrastructureCost, long productionCost) {
         this.id = id;
         this.infrastructureCost = infrastructureCost;
         this.productionCost = productionCost;
@@ -17,11 +17,11 @@ public class CostsChanges {
         return id;
     }
 
-    public float getInfrastructureCost() {
+    public long getInfrastructureCost() {
         return infrastructureCost;
     }
 
-    public float getProductionCost() {
+    public long getProductionCost() {
         return productionCost;
     }
 
@@ -29,11 +29,11 @@ public class CostsChanges {
         this.id = id;
     }
 
-    public void setInfrastructureCost(float infrastructureCost) {
+    public void setInfrastructureCost(long infrastructureCost) {
         this.infrastructureCost = infrastructureCost;
     }
 
-    public void setProductionCost(float productionCost) {
+    public void setProductionCost(long productionCost) {
         this.productionCost = productionCost;
     }
 

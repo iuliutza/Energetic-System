@@ -2,11 +2,11 @@ package fileio;
 
 public abstract class ShowEntity {
     private int id;
-    private float initialBudget;
+    private long initialBudget;
 
     public ShowEntity(){}
 
-    public ShowEntity(final int id, final float initialBudget) {
+    public ShowEntity(final int id, final long initialBudget) {
         this.id = id;
         this.initialBudget = initialBudget;
     }
@@ -15,7 +15,7 @@ public abstract class ShowEntity {
         return id;
     }
 
-    public float getInitialBudget() {
+    public long getInitialBudget() {
         return initialBudget;
     }
 
@@ -23,7 +23,7 @@ public abstract class ShowEntity {
         this.id = id;
     }
 
-    public void setInitialBudget(float initialBudget) {
+    public void setInitialBudget(long initialBudget) {
         this.initialBudget = initialBudget;
     }
 }

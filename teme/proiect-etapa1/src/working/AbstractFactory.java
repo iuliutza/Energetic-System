@@ -1,8 +1,8 @@
 package working;
 
 public abstract class AbstractFactory {
-    public abstract Consumer createConsumer(int id, float budget, float monthlyIncome);
-    public abstract Distributor createDistributor(int id, float budget, int contractLength, float pCost, float iCost);
+    public abstract Consumer createConsumer(int id, long budget, long monthlyIncome);
+    public abstract Distributor createDistributor(int id, long budget, int contractLength, long pCost, long iCost);
 
 
 }

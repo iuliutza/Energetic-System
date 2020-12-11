@@ -3,11 +3,11 @@ package working;
 import java.util.List;
 
 public interface DistributorInterface {
-    void updateCosts( float iCost, float pCost);
-    void updateCostContract(float iCost, float pCost, float profit, int noOfClients);
-    void payExpenses(float iCost, float pCost, int noOfClients);
-    void calculateProfit(float productionCost);
-    void updateContracts(int consumerId, float price, int remainedContractMonths);
+    void updateCosts( long iCost, long pCost);
+    void updateCostContract(long iCost, long pCost, long profit, int noOfClients);
+    void payExpenses(long iCost, long pCost, int noOfClients);
+    void calculateProfit(long productionCost);
+    void updateContracts(int consumerId, long price, int remainedContractMonths);
     void deleteUselessContracts();
     void deleteContract(int id);
 }

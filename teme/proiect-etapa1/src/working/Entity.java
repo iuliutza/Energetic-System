@@ -2,12 +2,12 @@ package working;
 
 public abstract class Entity {
     private int id;
-    private float budget;
+    private long budget;
     private boolean isBankrupt;
 
     public Entity() { }
 
-    public Entity(int id, float budget) {
+    public Entity(int id, long budget) {
         this.id = id;
         this.budget = budget;
         this.isBankrupt = false;
@@ -21,11 +21,11 @@ public abstract class Entity {
         this.id = id;
     }
 
-    public float getBudget() {
+    public long getBudget() {
         return budget;
     }
 
-    public void setBudget(float budget) {
+    public void setBudget(long budget) {
         this.budget = budget;
     }
 
