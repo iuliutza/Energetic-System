@@ -1,32 +1,23 @@
 package working;
 
-public class Contract {
+public final class Contract {
     private int consumerId;
     private long price;
     private int remainedContractMonths;
 
-    public Contract() {}
+    public Contract() { }
 
-    public Contract(int id, long price, int remainedContractMonths) {
+    public Contract(final int id, final long price, final int remainedContractMonths) {
         this.consumerId = id;
         this.price = price;
         this.remainedContractMonths = remainedContractMonths;
-    }
-
-    @Override
-    public String toString() {
-        return "Contract{" +
-                "consumerId=" + consumerId +
-                ", price=" + price +
-                ", remainedContractMonths=" + remainedContractMonths +
-                '}';
     }
 
     public int getConsumerId() {
         return consumerId;
     }
 
-    public void setConsumerId(int consumerId) {
+    public void setConsumerId(final int consumerId) {
         this.consumerId = consumerId;
     }
 
@@ -34,7 +25,7 @@ public class Contract {
         return price;
     }
 
-    public void setPrice(long price) {
+    public void setPrice(final long price) {
         this.price = price;
     }
 
@@ -42,7 +33,16 @@ public class Contract {
         return remainedContractMonths;
     }
 
-    public void setRemainedContractMonths(int remainedContractMonths) {
+    public void setRemainedContractMonths(final int remainedContractMonths) {
         this.remainedContractMonths = remainedContractMonths;
+    }
+
+    @Override
+    public String toString() {
+        return "Contract{"
+                + "consumerId=" + consumerId
+                + ", price=" + price
+                + ", remainedContractMonths=" + remainedContractMonths
+                + '}';
     }
 }

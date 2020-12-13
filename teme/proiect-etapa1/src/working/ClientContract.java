@@ -1,13 +1,14 @@
 package working;
 
-public class ClientContract {
+public final class ClientContract {
     private int distributorId;
     private long price;
     private int remainedContractMonths;
 
     public ClientContract() { }
 
-    public ClientContract(int distributorId, long price, int remainedContractMonths) {
+    public ClientContract(final int distributorId, final long price,
+                          final int remainedContractMonths) {
         this.distributorId = distributorId;
         this.price = price;
         this.remainedContractMonths = remainedContractMonths;
@@ -17,7 +18,7 @@ public class ClientContract {
         return distributorId;
     }
 
-    public void setDistributorId(int distributorId) {
+    public void setDistributorId(final int distributorId) {
         this.distributorId = distributorId;
     }
 
@@ -25,7 +26,7 @@ public class ClientContract {
         return price;
     }
 
-    public void setPrice(long price) {
+    public void setPrice(final long price) {
         this.price = price;
     }
 
@@ -33,14 +34,14 @@ public class ClientContract {
         return remainedContractMonths;
     }
 
-    public void setRemainedContractMonths(int remainedContractMonths) {
+    public void setRemainedContractMonths(final int remainedContractMonths) {
         this.remainedContractMonths = remainedContractMonths;
     }
 
     @Override
     public String toString() {
-        return "ClientContract{" +
-                "distributorId=" + distributorId
+        return "ClientContract{"
+                + "distributorId=" + distributorId
                 + ", price=" + price
                 + ", remainedContractMonths=" + remainedContractMonths
                 + '}';

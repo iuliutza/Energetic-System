@@ -3,7 +3,7 @@ package working;
 import java.util.ArrayList;
 import java.util.List;
 
-public class Distributor extends Entity implements DistributorInterface {
+public final class Distributor extends Entity implements DistributorInterface {
     private int contractLength;
     private long infrastructureCost;
     private long productionCost;
@@ -12,9 +12,12 @@ public class Distributor extends Entity implements DistributorInterface {
     private long profit;
     private List<Contract> contracts;
 
-    public Distributor() { super(); }
+    public Distributor() {
+        super();
+    }
 
-    public Distributor(int id, long budget, int contractLength, long pCost, long iCost) {
+    public Distributor(final int id, final long budget, final int contractLength, final long pCost,
+                       final long iCost) {
         super(id, budget);
         this.contractLength = contractLength;
         this.productionCost = pCost;
@@ -29,7 +32,7 @@ public class Distributor extends Entity implements DistributorInterface {
         return contractLength;
     }
 
-    public void setContractLength(int contractLength) {
+    public void setContractLength(final int contractLength) {
         this.contractLength = contractLength;
     }
 
@@ -37,7 +40,7 @@ public class Distributor extends Entity implements DistributorInterface {
         return infrastructureCost;
     }
 
-    public void setInfrastructureCost(long infrastructureCost) {
+    public void setInfrastructureCost(final long infrastructureCost) {
         this.infrastructureCost = infrastructureCost;
     }
 
@@ -45,7 +48,7 @@ public class Distributor extends Entity implements DistributorInterface {
         return productionCost;
     }
 
-    public void setProductionCost(long productionCost) {
+    public void setProductionCost(final long productionCost) {
         this.productionCost = productionCost;
     }
 
@@ -53,7 +56,7 @@ public class Distributor extends Entity implements DistributorInterface {
         return noOfClients;
     }
 
-    public void setNoOfClients(int noOfClients) {
+    public void setNoOfClients(final int noOfClients) {
         this.noOfClients = noOfClients;
     }
 
@@ -61,7 +64,7 @@ public class Distributor extends Entity implements DistributorInterface {
         return priceOfContract;
     }
 
-    public void setPriceOfContract(long priceOfContract) {
+    public void setPriceOfContract(final long priceOfContract) {
         this.priceOfContract = priceOfContract;
     }
 
@@ -69,7 +72,7 @@ public class Distributor extends Entity implements DistributorInterface {
         return profit;
     }
 
-    public void setProfit(long profit) {
+    public void setProfit(final long profit) {
         this.profit = profit;
     }
 
@@ -77,7 +80,7 @@ public class Distributor extends Entity implements DistributorInterface {
         return contracts;
     }
 
-    public void setContracts(List<Contract> contracts) {
+    public void setContracts(final List<Contract> contracts) {
         this.contracts = contracts;
     }
 
@@ -98,21 +101,23 @@ public class Distributor extends Entity implements DistributorInterface {
     }
 
     @Override
-    public void updateCosts(long iCost, long pCost) {
+    public void updateCosts(final long iCost, final long pCost) {
         this.infrastructureCost = iCost;
         this.productionCost = pCost;
     }
 
     @Override
-    public void updateCostContract(long iCost, long pCost, long profit, int noOfClients) {
-        if (noOfClients == 0)
+    public void updateCostContract(final long iCost, final long pCost, final long profit,
+                                   final int noOfClients) {
+        if (noOfClients == 0) {
             this.priceOfContract = iCost + pCost + profit;
-        else
+        } else {
             this.priceOfContract = Math.round(Math.floor(iCost / noOfClients) + pCost + profit);
+        }
     }
 
     @Override
-    public void payExpenses(long iCost, long pCost, int noOfClients) {
+    public void payExpenses(final long iCost, final long pCost, final int noOfClients) {
         long price = iCost + (pCost * noOfClients);
         this.setBudget(this.getBudget() - price);
         if (this.getBudget() < 0) {
@@ -121,12 +126,13 @@ public class Distributor extends Entity implements DistributorInterface {
     }
 
     @Override
-    public void calculateProfit(long productionCost) {
-        this.profit = Math.round(Math.floor(0.2 * productionCost));
+    public void calculateProfit(final long productionCost) {
+        this.profit = Math.round(Math.floor(Constants.PROFIT_PERCENTAGE * productionCost));
     }
 
     @Override
-    public void updateContracts(int consumerId, long price, int remainedContractMonths) {
+    public void updateContracts(final int consumerId, final long price,
+                                final int remainedContractMonths) {
         Contract contract = new Contract(consumerId, price, remainedContractMonths);
         this.contracts.add(contract);
 
@@ -144,7 +150,7 @@ public class Distributor extends Entity implements DistributorInterface {
     }
 
     @Override
-    public void deleteContract(int id) {
+    public void deleteContract(final int id) {
         for (int i = 0; i < this.contracts.size(); i++) {
             if (this.contracts.get(i).getConsumerId() == id) {
                 this.contracts.remove(i);

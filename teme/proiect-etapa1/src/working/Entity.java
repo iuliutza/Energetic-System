@@ -7,42 +7,46 @@ public abstract class Entity {
 
     public Entity() { }
 
-    public Entity(int id, long budget) {
+    public Entity(final int id, final long budget) {
         this.id = id;
         this.budget = budget;
         this.isBankrupt = false;
     }
 
-    public int getId() {
+    public final  int getId() {
         return id;
     }
 
-    public void setId(int id) {
+    public final void setId(final int id) {
         this.id = id;
     }
 
-    public long getBudget() {
+    public final long getBudget() {
         return budget;
     }
 
-    public void setBudget(long budget) {
+    public final void setBudget(final long budget) {
         this.budget = budget;
     }
 
-    public boolean isBankrupt() {
+    public final boolean isBankrupt() {
         return isBankrupt;
     }
 
-    public void setBankrupt(boolean bankrupt) {
+    public final void setBankrupt(final boolean bankrupt) {
         isBankrupt = bankrupt;
     }
 
+    /**
+     * To string method in order to be able to see the values of the fields when printed out
+     * @return String with the values of the fields
+     */
     @Override
     public String toString() {
-        return "Entity{" +
-                "id=" + id +
-                ", budget=" + budget +
-                ", isBankrupt=" + isBankrupt +
-                '}';
+        return "Entity{"
+                + "id=" + id
+                + ", budget=" + budget
+                + ", isBankrupt=" + isBankrupt
+                + '}';
     }
 }

@@ -2,7 +2,7 @@ package working;
 
 import java.util.List;
 
-public class Consumer extends Entity implements ConsumerInterface {
+public final class Consumer extends Entity implements ConsumerInterface {
     private long monthlyIncome;
     private long penalty;
     private long remainingPayment;
@@ -47,7 +47,7 @@ public class Consumer extends Entity implements ConsumerInterface {
         return contract;
     }
 
-    public void setContract(ClientContract contract) {
+    public void setContract(final ClientContract contract) {
         this.contract = contract;
     }
 
@@ -69,12 +69,12 @@ public class Consumer extends Entity implements ConsumerInterface {
     }
 
     @Override
-    public void giveRate(Distributor distributor, long price) {
+    public void giveRate(final Distributor distributor, final long price) {
                 distributor.setBudget(distributor.getBudget() + price);
     }
 
     @Override
-    public void payRate(List<Distributor> distributors) {
+    public void payRate(final List<Distributor> distributors) {
 
         long diff = this.getBudget() - this.contract.getPrice();
         int id = Constants.BEGINNING_ID;
@@ -86,7 +86,7 @@ public class Consumer extends Entity implements ConsumerInterface {
         }
 
         //case: it's the first month when the consumer can't pay the rate
-        if ( diff < 0 && this.penalty == 0) {
+        if (diff < 0 && this.penalty == 0) {
             this.penalty++;
             this.remainingPayment = this.contract.getPrice();
             decreaseNoOfMonths(distributors, id);
@@ -97,29 +97,25 @@ public class Consumer extends Entity implements ConsumerInterface {
         if (penalty == 1) {
             long price = Math.round(Math.floor(this.remainingPayment * Constants.PENALTY_PERCENTAGE)
                     + this.contract.getPrice());
-
             if ((this.getBudget() - price) < 0) {
                 this.setBankrupt(true);
                 return;
             }
-
             this.setBudget(this.getBudget() - price);
-            this.giveRate(distributors.get(id),price);
+            this.giveRate(distributors.get(id), price);
             System.out.println(distributors.get(id).getBudget());
-            this.penalty --;
+            this.penalty--;
         }
-
         //case: consumer normally pays the rate
         if (diff >= 0 && this.penalty == 0) {
             this.setBudget(this.getBudget() - this.contract.getPrice());
             this.giveRate(distributors.get(id), this.contract.getPrice());
         }
-
         decreaseNoOfMonths(distributors, id);
     }
 
-    private void decreaseNoOfMonths(List<Distributor> distributors, int id) {
-        this.contract.setRemainedContractMonths(this.contract.getRemainedContractMonths()-1);
+    private void decreaseNoOfMonths(final List<Distributor> distributors, final int id) {
+        this.contract.setRemainedContractMonths(this.contract.getRemainedContractMonths() - 1);
         for (int i = 0; i < distributors.get(id).getContracts().size(); i++) {
             if (distributors.get(id).getContracts().get(i).getConsumerId() == this.getId()) {
                 distributors.get(id).getContracts().get(i).setRemainedContractMonths(
@@ -130,7 +126,7 @@ public class Consumer extends Entity implements ConsumerInterface {
 
 
     @Override
-    public int buildContract(List<Distributor> distributors) {
+    public int buildContract(final List<Distributor> distributors) {
         long min = Constants.MIN;
         int id = Constants.BEGINNING_ID;
         for (Distributor distributor : distributors) {
@@ -147,13 +143,11 @@ public class Consumer extends Entity implements ConsumerInterface {
                 break;
             }
         }
-
-        if(id != Constants.BEGINNING_ID) {
+        if (id != Constants.BEGINNING_ID) {
             this.contract.setRemainedContractMonths(distributors.get(id).getContractLength());
             this.contract.setDistributorId(id);
             this.contract.setPrice(distributors.get(id).getPriceOfContract());
         }
-
         return id;
     }
 }
