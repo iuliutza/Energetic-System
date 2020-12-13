@@ -1,16 +1,15 @@
-package fileio;
+package inputclasses;
 
 import java.util.List;
 
-public class MonthlyUpdates {
+public final class MonthlyUpdates {
     private List<ConsumerInput> newConsumers;
     private List<CostsChanges> costsChanges;
 
-    public MonthlyUpdates() {
+    public MonthlyUpdates() { }
 
-    }
-
-    public MonthlyUpdates(List<ConsumerInput> newConsumers, List<CostsChanges> costsChanges) {
+    public MonthlyUpdates(final List<ConsumerInput> newConsumers,
+                          final List<CostsChanges> costsChanges) {
         this.newConsumers = newConsumers;
         this.costsChanges = costsChanges;
     }
@@ -23,19 +22,19 @@ public class MonthlyUpdates {
         return costsChanges;
     }
 
-    public void setNewConsumers(List<ConsumerInput> newConsumers) {
+    public void setNewConsumers(final List<ConsumerInput> newConsumers) {
         this.newConsumers = newConsumers;
     }
 
-    public void setCostsChanges(List<CostsChanges> costChanges) {
+    public void setCostsChanges(final List<CostsChanges> costChanges) {
         this.costsChanges = costChanges;
     }
 
     @Override
     public String toString() {
-        return "MonthlyUpdates{" +
-                "newConsumers=" + newConsumers +
-                ", costsChanges=" + costsChanges +
-                '}';
+        return "MonthlyUpdates{"
+                + "newConsumers=" + newConsumers
+                + ", costsChanges=" + costsChanges
+                + '}';
     }
 }

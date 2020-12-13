@@ -1,18 +1,18 @@
-package fileio;
+package inputclasses;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
 
 import java.io.File;
 import java.io.IOException;
 
-public class InputLoader {
+public final class InputLoader {
     private String inputPath;
 
-    public InputLoader(){
+    public InputLoader() {
         this.inputPath = null;
     }
 
-    public InputLoader(String inputPath) {
+    public InputLoader(final String inputPath) {
         this.inputPath = inputPath;
     }
 
@@ -20,15 +20,16 @@ public class InputLoader {
         return inputPath;
     }
 
-    public Input readData(String inputPath) throws IOException {
+    /**
+     *
+     * @param inputPath path to the input file
+     * @return return the data from the json input file mapped into an input object.
+     * @throws IOException exception
+     */
+    public Input readData(final String inputPath) throws IOException {
         ObjectMapper objectMapper = new ObjectMapper();
-
         File file = new File(inputPath);
-        //"/home/iulia/IdeaProjects/Project-etapa1/teme/proiect-etapa1/checker/resources/in/basic_1.json"
-
         Input input = objectMapper.readValue(file, Input.class);
         return input;
-
     }
-
 }

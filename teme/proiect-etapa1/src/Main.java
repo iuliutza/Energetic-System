@@ -1,7 +1,7 @@
 import com.fasterxml.jackson.databind.ObjectMapper;
-import fileio.CostsChanges;
-import fileio.Input;
-import fileio.InputLoader;
+import inputclasses.CostsChanges;
+import inputclasses.Input;
+import inputclasses.InputLoader;
 import ouputclasses.ConsumerOutput;
 import ouputclasses.DistributorOutput;
 import ouputclasses.Output;

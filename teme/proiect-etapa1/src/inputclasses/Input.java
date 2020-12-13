@@ -1,20 +1,20 @@
-package fileio;
+package inputclasses;
 
 import java.util.List;
 
-public class Input {
+public final class Input {
     private int numberOfTurns;
     private InitialData initialData;
     private List<MonthlyUpdates> monthlyUpdates;
 
-    public Input(int numberOfTurns, InitialData initialData,
-                 List<MonthlyUpdates> monthlyUpdates) {
+    public Input(final int numberOfTurns, final InitialData initialData,
+                 final List<MonthlyUpdates> monthlyUpdates) {
         this.numberOfTurns = numberOfTurns;
         this.initialData = initialData;
         this.monthlyUpdates = monthlyUpdates;
     }
 
-    public Input(){}
+    public Input() { }
 
     public int getNumberOfTurns() {
         return numberOfTurns;
@@ -28,24 +28,24 @@ public class Input {
         return monthlyUpdates;
     }
 
-    public void setNumberOfTurns(int numberOfTurns) {
+    public void setNumberOfTurns(final int numberOfTurns) {
         this.numberOfTurns = numberOfTurns;
     }
 
-    public void setInitialData(InitialData initialData) {
+    public void setInitialData(final InitialData initialData) {
         this.initialData = initialData;
     }
 
-    public void setMonthlyUpdates(List<MonthlyUpdates> monthlyUpdates) {
+    public void setMonthlyUpdates(final List<MonthlyUpdates> monthlyUpdates) {
         this.monthlyUpdates = monthlyUpdates;
     }
 
     @Override
     public String toString() {
-        return "Input{" +
-                "numberOfTurns=" + numberOfTurns +
-                ", initialData=" + initialData +
-                ", monthlyUpdates=" + monthlyUpdates +
-                '}';
+        return "Input{"
+                + "numberOfTurns=" + numberOfTurns
+                + ", initialData=" + initialData
+                + ", monthlyUpdates=" + monthlyUpdates
+                + '}';
     }
 }
