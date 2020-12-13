@@ -1,5 +1,5 @@
 package ouputclasses;
-import working.Contract;
+import game.Contract;
 
 import java.util.List;
 

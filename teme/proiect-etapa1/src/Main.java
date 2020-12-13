@@ -5,10 +5,10 @@ import inputclasses.InputLoader;
 import ouputclasses.ConsumerOutput;
 import ouputclasses.DistributorOutput;
 import ouputclasses.Output;
-import working.AbstractFactory;
-import working.Consumer;
-import working.Distributor;
-import working.FactoryCreator;
+import game.AbstractFactory;
+import game.Consumer;
+import game.Distributor;
+import game.FactoryCreator;
 
 import java.io.File;
 import java.util.ArrayList;

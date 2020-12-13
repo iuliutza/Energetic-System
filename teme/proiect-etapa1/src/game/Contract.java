@@ -1,4 +1,4 @@
-package working;
+package game;
 
 public final class Contract {
     private int consumerId;

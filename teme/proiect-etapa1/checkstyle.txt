@@ -1,9 +1,9 @@
 Starting audit...
-[ERROR] /home/iulia/IdeaProjects/Project-etapa1/teme/proiect-etapa1/./src/working/Distributor.java:110:83: 'profit' hides a field. [HiddenField]
-[ERROR] /home/iulia/IdeaProjects/Project-etapa1/teme/proiect-etapa1/./src/working/Distributor.java:111:46: 'noOfClients' hides a field. [HiddenField]
-[ERROR] /home/iulia/IdeaProjects/Project-etapa1/teme/proiect-etapa1/./src/working/Distributor.java:120:75: 'noOfClients' hides a field. [HiddenField]
-[ERROR] /home/iulia/IdeaProjects/Project-etapa1/teme/proiect-etapa1/./src/working/Distributor.java:129:44: 'productionCost' hides a field. [HiddenField]
-[ERROR] /home/iulia/IdeaProjects/Project-etapa1/teme/proiect-etapa1/./src/working/Constants.java:3:1: Utility classes should not have a public or default constructor. [HideUtilityClassConstructor]
+[ERROR] /home/iulia/IdeaProjects/Project-etapa1/teme/proiect-etapa1/./src/game/Distributor.java:110:83: 'profit' hides a field. [HiddenField]
+[ERROR] /home/iulia/IdeaProjects/Project-etapa1/teme/proiect-etapa1/./src/game/Distributor.java:111:46: 'noOfClients' hides a field. [HiddenField]
+[ERROR] /home/iulia/IdeaProjects/Project-etapa1/teme/proiect-etapa1/./src/game/Distributor.java:120:75: 'noOfClients' hides a field. [HiddenField]
+[ERROR] /home/iulia/IdeaProjects/Project-etapa1/teme/proiect-etapa1/./src/game/Distributor.java:129:44: 'productionCost' hides a field. [HiddenField]
+[ERROR] /home/iulia/IdeaProjects/Project-etapa1/teme/proiect-etapa1/./src/game/Constants.java:3:1: Utility classes should not have a public or default constructor. [HideUtilityClassConstructor]
 [ERROR] /home/iulia/IdeaProjects/Project-etapa1/teme/proiect-etapa1/./src/Main.java:17:1: Utility classes should not have a public or default constructor. [HideUtilityClassConstructor]
 [ERROR] /home/iulia/IdeaProjects/Project-etapa1/teme/proiect-etapa1/./src/inputclasses/InputLoader.java:29:40: 'inputPath' hides a field. [HiddenField]
 Audit done.

@@ -1,4 +1,4 @@
-package working;
+package game;
 
 public final class FactoryCreator {
     private static FactoryCreator instance;

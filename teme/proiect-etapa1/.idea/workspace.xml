@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="62c63c35-2f15-45b0-a391-6e1cec7ed447" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/README.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/checkstyle.txt" beforeDir="false" afterPath="$PROJECT_DIR$/checkstyle.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ouputclasses/DistributorOutput.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ouputclasses/DistributorOutput.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/working/AbstractFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/game/AbstractFactory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/working/ClientContract.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/game/ClientContract.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/working/Constants.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/game/Constants.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/working/Consumer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/game/Consumer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/working/ConsumerFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/game/ConsumerFactory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/working/ConsumerInterface.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/game/ConsumerInterface.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/working/Contract.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/game/Contract.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/working/Distributor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/game/Distributor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/working/DistributorFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/game/DistributorFactory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/working/DistributorInterface.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/game/DistributorInterface.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/working/Entity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/game/Entity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/working/FactoryCreator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/game/FactoryCreator.java" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
+  <component name="ProjectId" id="1lao4LqvkQyASMs6TkNUz8gLJnY" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+    <option name="showMembers" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="dart.analysis.tool.window.visible" value="false" />
+    <property name="extract.method.default.visibility" value="private" />
+    <property name="last_opened_file_path" value="$USER_HOME$/Downloads/jackson-databind-2.9.7.jar" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.0" />
+    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
+    <property name="show.migrate.to.gradle.popup" value="false" />
+  </component>
+  <component name="RunManager" selected="Application.Test">
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Main" />
+      <module name="proiect-etapa1" />
+      <option name="PROGRAM_PARAMETERS" value="basic_11.json out_11.json" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Test" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Test" />
+      <module name="proiect-etapa1" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
+      <option name="arquillianRunConfiguration">
+        <value>
+          <option name="containerStateName" value="" />
+        </value>
+      </option>
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="Application.Main" />
+      <item itemvalue="Application.Test" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.Test" />
+        <item itemvalue="Application.Main" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="62c63c35-2f15-45b0-a391-6e1cec7ed447" name="Default Changelist" comment="" />
+      <created>1607844373558</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1607844373558</updated>
+      <workItem from="1607844379232" duration="3000" />
+      <workItem from="1607844397344" duration="1306000" />
+      <workItem from="1607857004709" duration="9098000" />
+      <workItem from="1607877127868" duration="1279000" />
+      <workItem from="1607888788746" duration="1003000" />
+    </task>
+    <task id="LOCAL-00001" summary="checkstyle of output classes on point">
+      <created>1607865311119</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1607865311119</updated>
+    </task>
+    <task id="LOCAL-00002" summary="checkstyle of input classes on point">
+      <created>1607866305597</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1607866305597</updated>
+    </task>
+    <task id="LOCAL-00003" summary="done!">
+      <created>1607877282111</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1607877282111</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="checkstyle of output classes on point" />
+    <MESSAGE value="checkstyle of input classes on point" />
+    <MESSAGE value="done!" />
+    <option name="LAST_COMMIT_MESSAGE" value="done!" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="298" y="183" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1607844537761">
+      <screen x="0" y="27" width="1680" height="989" />
+    </state>
+    <state x="298" y="183" key="#com.intellij.execution.impl.EditConfigurationsDialog/1680.0.1920.1080/0.27.1680.989@0.27.1680.989" timestamp="1607844537761" />
+    <state x="648" y="232" width="374" height="592" key="#com.intellij.ide.util.MemberChooser" timestamp="1607862453987">
+      <screen x="0" y="27" width="3600" height="989" />
+    </state>
+    <state x="648" y="232" width="374" height="592" key="#com.intellij.ide.util.MemberChooser/0.27.3600.989@0.27.3600.989" timestamp="1607862453987" />
+    <state x="593" y="419" width="494" height="226" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes" timestamp="1607865588637">
+      <screen x="0" y="27" width="3600" height="989" />
+    </state>
+    <state x="593" y="419" width="494" height="226" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/0.27.3600.989@0.27.3600.989" timestamp="1607865588637" />
+    <state x="160" y="70" width="912" height="916" key="CommitChangelistDialog2" timestamp="1607877281852">
+      <screen x="0" y="27" width="1680" height="989" />
+    </state>
+    <state x="343" y="70" width="984" height="916" key="CommitChangelistDialog2/0.27.3600.989@0.27.3600.989" timestamp="1607866305493" />
+    <state x="160" y="70" width="912" height="916" key="CommitChangelistDialog2/1680.0.1920.1080/0.27.1680.989@0.27.1680.989" timestamp="1607877281852" />
+    <state x="1680" y="272" width="735" height="520" key="FileChooserDialogImpl" timestamp="1607863372841">
+      <screen x="0" y="27" width="3600" height="989" />
+    </state>
+    <state x="1680" y="272" key="FileChooserDialogImpl/0.27.3600.989@0.27.3600.989" timestamp="1607863372840" />
+    <state x="467" y="272" width="735" height="520" key="FileChooserDialogImpl/1680.0.1920.1080/0.27.1680.989@0.27.1680.989" timestamp="1607844499078" />
+    <state width="1874" height="707" key="GridCell.Tab.0.bottom" timestamp="1607888987351">
+      <screen x="1680" y="0" width="1920" height="1080" />
+    </state>
+    <state width="1634" height="194" key="GridCell.Tab.0.bottom/0.27.3600.989@0.27.3600.989" timestamp="1607869227090" />
+    <state width="1634" height="733" key="GridCell.Tab.0.bottom/1680.0.1920.1080/0.27.1680.989@0.27.1680.989" timestamp="1607878407428" />
+    <state width="1874" height="707" key="GridCell.Tab.0.bottom/1680.0.1920.1080/0.27.1680.989@1680.0.1920.1080" timestamp="1607888987351" />
+    <state width="1874" height="707" key="GridCell.Tab.0.center" timestamp="1607888987350">
+      <screen x="1680" y="0" width="1920" height="1080" />
+    </state>
+    <state width="1634" height="194" key="GridCell.Tab.0.center/0.27.3600.989@0.27.3600.989" timestamp="1607869227089" />
+    <state width="1634" height="733" key="GridCell.Tab.0.center/1680.0.1920.1080/0.27.1680.989@0.27.1680.989" timestamp="1607878407427" />
+    <state width="1874" height="707" key="GridCell.Tab.0.center/1680.0.1920.1080/0.27.1680.989@1680.0.1920.1080" timestamp="1607888987350" />
+    <state width="1874" height="707" key="GridCell.Tab.0.left" timestamp="1607888987350">
+      <screen x="1680" y="0" width="1920" height="1080" />
+    </state>
+    <state width="1634" height="194" key="GridCell.Tab.0.left/0.27.3600.989@0.27.3600.989" timestamp="1607869227089" />
+    <state width="1634" height="733" key="GridCell.Tab.0.left/1680.0.1920.1080/0.27.1680.989@0.27.1680.989" timestamp="1607878407427" />
+    <state width="1874" height="707" key="GridCell.Tab.0.left/1680.0.1920.1080/0.27.1680.989@1680.0.1920.1080" timestamp="1607888987350" />
+    <state width="1874" height="707" key="GridCell.Tab.0.right" timestamp="1607888987351">
+      <screen x="1680" y="0" width="1920" height="1080" />
+    </state>
+    <state width="1634" height="194" key="GridCell.Tab.0.right/0.27.3600.989@0.27.3600.989" timestamp="1607869227090" />
+    <state width="1634" height="733" key="GridCell.Tab.0.right/1680.0.1920.1080/0.27.1680.989@0.27.1680.989" timestamp="1607878407428" />
+    <state width="1874" height="707" key="GridCell.Tab.0.right/1680.0.1920.1080/0.27.1680.989@1680.0.1920.1080" timestamp="1607888987351" />
+    <state width="1634" height="339" key="GridCell.Tab.1.bottom" timestamp="1607869227081">
+      <screen x="0" y="27" width="3600" height="989" />
+    </state>
+    <state width="1634" height="339" key="GridCell.Tab.1.bottom/0.27.3600.989@0.27.3600.989" timestamp="1607869227081" />
+    <state width="1634" height="339" key="GridCell.Tab.1.center" timestamp="1607869227081">
+      <screen x="0" y="27" width="3600" height="989" />
+    </state>
+    <state width="1634" height="339" key="GridCell.Tab.1.center/0.27.3600.989@0.27.3600.989" timestamp="1607869227081" />
+    <state width="1634" height="339" key="GridCell.Tab.1.left" timestamp="1607869227080">
+      <screen x="0" y="27" width="3600" height="989" />
+    </state>
+    <state width="1634" height="339" key="GridCell.Tab.1.left/0.27.3600.989@0.27.3600.989" timestamp="1607869227080" />
+    <state width="1634" height="339" key="GridCell.Tab.1.right" timestamp="1607869227081">
+      <screen x="0" y="27" width="3600" height="989" />
+    </state>
+    <state width="1634" height="339" key="GridCell.Tab.1.right/0.27.3600.989@0.27.3600.989" timestamp="1607869227081" />
+    <state x="329" y="160" width="1022" height="737" key="SettingsEditor" timestamp="1607844503670">
+      <screen x="0" y="27" width="1680" height="989" />
+    </state>
+    <state x="329" y="160" width="1022" height="737" key="SettingsEditor/1680.0.1920.1080/0.27.1680.989@0.27.1680.989" timestamp="1607844503670" />
+    <state x="203" y="261" width="528" height="535" key="Vcs.Push.Dialog.v2" timestamp="1607877285212">
+      <screen x="0" y="27" width="1680" height="989" />
+    </state>
+    <state x="435" y="261" width="800" height="535" key="Vcs.Push.Dialog.v2/0.27.3600.989@0.27.3600.989" timestamp="1607866308487" />
+    <state x="203" y="261" width="528" height="535" key="Vcs.Push.Dialog.v2/1680.0.1920.1080/0.27.1680.989@0.27.1680.989" timestamp="1607877285212" />
+    <state x="2082" y="64" width="1308" height="847" maximized="true" key="dock-window-1" timestamp="1607866854464">
+      <screen x="0" y="27" width="3600" height="989" />
+    </state>
+    <state x="2082" y="64" width="1308" height="847" maximized="true" key="dock-window-1/0.27.3600.989@0.27.3600.989" timestamp="1607866854464" />
+    <state x="714" y="325" width="524" height="457" key="extract.method.dialog" timestamp="1607863766430">
+      <screen x="0" y="27" width="3600" height="989" />
+    </state>
+    <state x="714" y="325" width="524" height="457" key="extract.method.dialog/0.27.3600.989@0.27.3600.989" timestamp="1607863766430" />
+    <state x="2255" y="223" width="768" height="741" key="search.everywhere.popup" timestamp="1607888987305">
+      <screen x="1680" y="0" width="1920" height="1080" />
+    </state>
+    <state x="503" y="231" width="672" height="678" key="search.everywhere.popup/1680.0.1920.1080/0.27.1680.989@0.27.1680.989" timestamp="1607845665929" />
+    <state x="2255" y="223" width="768" height="741" key="search.everywhere.popup/1680.0.1920.1080/0.27.1680.989@1680.0.1920.1080" timestamp="1607888987305" />
+  </component>
+</project>

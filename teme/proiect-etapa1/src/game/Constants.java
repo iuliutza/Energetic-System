@@ -1,4 +1,4 @@
-package working;
+package game;
 
 public class Constants {
     public static final long MIN = 1000;

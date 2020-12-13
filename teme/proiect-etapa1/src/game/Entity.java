@@ -1,4 +1,4 @@
-package working;
+package game;
 
 public abstract class Entity {
     private int id;
