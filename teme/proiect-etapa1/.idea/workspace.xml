@@ -5,22 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="62c63c35-2f15-45b0-a391-6e1cec7ed447" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/README.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/checkstyle.txt" beforeDir="false" afterPath="$PROJECT_DIR$/checkstyle.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ouputclasses/DistributorOutput.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ouputclasses/DistributorOutput.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/working/AbstractFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/game/AbstractFactory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/working/ClientContract.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/game/ClientContract.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/working/Constants.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/game/Constants.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/working/Consumer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/game/Consumer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/working/ConsumerFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/game/ConsumerFactory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/working/ConsumerInterface.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/game/ConsumerInterface.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/working/Contract.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/game/Contract.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/working/Distributor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/game/Distributor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/working/DistributorFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/game/DistributorFactory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/working/DistributorInterface.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/game/DistributorInterface.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/working/Entity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/game/Entity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/working/FactoryCreator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/game/FactoryCreator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/README.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/README.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -109,7 +95,7 @@
       <workItem from="1607844397344" duration="1306000" />
       <workItem from="1607857004709" duration="9098000" />
       <workItem from="1607877127868" duration="1279000" />
-      <workItem from="1607888788746" duration="1003000" />
+      <workItem from="1607888788746" duration="4361000" />
     </task>
     <task id="LOCAL-00001" summary="checkstyle of output classes on point">
       <created>1607865311119</created>
@@ -132,7 +118,14 @@
       <option name="project" value="LOCAL" />
       <updated>1607877282111</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="done!">
+      <created>1607890199329</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1607890199329</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -157,11 +150,11 @@
       <screen x="0" y="27" width="3600" height="989" />
     </state>
     <state x="593" y="419" width="494" height="226" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/0.27.3600.989@0.27.3600.989" timestamp="1607865588637" />
-    <state x="160" y="70" width="912" height="916" key="CommitChangelistDialog2" timestamp="1607877281852">
+    <state x="160" y="70" width="912" height="916" key="CommitChangelistDialog2" timestamp="1607890199020">
       <screen x="0" y="27" width="1680" height="989" />
     </state>
     <state x="343" y="70" width="984" height="916" key="CommitChangelistDialog2/0.27.3600.989@0.27.3600.989" timestamp="1607866305493" />
-    <state x="160" y="70" width="912" height="916" key="CommitChangelistDialog2/1680.0.1920.1080/0.27.1680.989@0.27.1680.989" timestamp="1607877281852" />
+    <state x="160" y="70" width="912" height="916" key="CommitChangelistDialog2/1680.0.1920.1080/0.27.1680.989@0.27.1680.989" timestamp="1607890199020" />
     <state x="1680" y="272" width="735" height="520" key="FileChooserDialogImpl" timestamp="1607863372841">
       <screen x="0" y="27" width="3600" height="989" />
     </state>
@@ -216,6 +209,10 @@
     </state>
     <state x="435" y="261" width="800" height="535" key="Vcs.Push.Dialog.v2/0.27.3600.989@0.27.3600.989" timestamp="1607866308487" />
     <state x="203" y="261" width="528" height="535" key="Vcs.Push.Dialog.v2/1680.0.1920.1080/0.27.1680.989@0.27.1680.989" timestamp="1607877285212" />
+    <state x="741" y="436" width="428" height="177" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1607890167249">
+      <screen x="0" y="27" width="1680" height="989" />
+    </state>
+    <state x="741" y="436" width="428" height="177" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/1680.0.1920.1080/0.27.1680.989@0.27.1680.989" timestamp="1607890167249" />
     <state x="2082" y="64" width="1308" height="847" maximized="true" key="dock-window-1" timestamp="1607866854464">
       <screen x="0" y="27" width="3600" height="989" />
     </state>
