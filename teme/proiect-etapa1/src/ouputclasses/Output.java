@@ -1,4 +1,4 @@
-package ouputClasses;
+package ouputclasses;
 
 import com.fasterxml.jackson.annotation.JsonPropertyOrder;
 
@@ -7,11 +7,12 @@ import java.util.List;
         "consumers",
         "distributors"
 })
-public class Output {
+public final class Output {
     private List<ConsumerOutput> consumers;
     private List<DistributorOutput> distributors;
 
-    public Output(List<ConsumerOutput> consumers, List<DistributorOutput> distributors) {
+    public Output(final List<ConsumerOutput> consumers, final List<DistributorOutput>
+            distributors) {
         this.consumers = consumers;
         this.distributors = distributors;
     }
@@ -20,7 +21,7 @@ public class Output {
         return consumers;
     }
 
-    public void setConsumers(List<ConsumerOutput> consumers) {
+    public void setConsumers(final List<ConsumerOutput> consumers) {
         this.consumers = consumers;
     }
 
@@ -28,15 +29,15 @@ public class Output {
         return distributors;
     }
 
-    public void setDistributors(List<DistributorOutput> distributors) {
+    public void setDistributors(final List<DistributorOutput> distributors) {
         this.distributors = distributors;
     }
 
     @Override
     public String toString() {
-        return "Output{" +
-                "consumers=" + consumers +
-                ", distributors=" + distributors +
-                '}';
+        return "Output{"
+                + "consumers=" + consumers
+                + ", distributors=" + distributors
+                + '}';
     }
 }

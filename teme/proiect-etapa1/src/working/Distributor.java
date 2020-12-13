@@ -83,8 +83,8 @@ public class Distributor extends Entity implements DistributorInterface {
 
     @Override
     public String toString() {
-        return "Distributor{" +
-                "id=" + super.getId()
+        return "Distributor{"
+                + "id=" + super.getId()
                 + " budget=" + super.getBudget()
                 + " isBankrupt=" + super.isBankrupt()
                 + " contractLength=" + contractLength
@@ -108,12 +108,16 @@ public class Distributor extends Entity implements DistributorInterface {
         if (noOfClients == 0)
             this.priceOfContract = iCost + pCost + profit;
         else
-            this.priceOfContract = Math.round(Math.floor(iCost/noOfClients) + pCost + profit);
+            this.priceOfContract = Math.round(Math.floor(iCost / noOfClients) + pCost + profit);
     }
 
     @Override
     public void payExpenses(long iCost, long pCost, int noOfClients) {
-        this.setBudget(this.getBudget() - iCost - (pCost * noOfClients));
+        long price = iCost + (pCost * noOfClients);
+        this.setBudget(this.getBudget() - price);
+        if (this.getBudget() < 0) {
+            this.setBankrupt(true);
+        }
     }
 
     @Override
@@ -123,14 +127,15 @@ public class Distributor extends Entity implements DistributorInterface {
 
     @Override
     public void updateContracts(int consumerId, long price, int remainedContractMonths) {
-        Contract contract = new Contract(consumerId,price,remainedContractMonths);
+        Contract contract = new Contract(consumerId, price, remainedContractMonths);
         this.contracts.add(contract);
 
     }
 
+    @Override
     public void deleteUselessContracts() {
-        for(int i = 0; i < this.contracts.size(); i++) {
-            if(this.contracts.get(i).getRemainedContractMonths() == 0) {
+        for (int i = 0; i < this.contracts.size(); i++) {
+            if (this.contracts.get(i).getRemainedContractMonths() == 0) {
                 this.contracts.remove(i);
                 i--;
                 this.setNoOfClients(this.getNoOfClients() - 1);
@@ -140,8 +145,8 @@ public class Distributor extends Entity implements DistributorInterface {
 
     @Override
     public void deleteContract(int id) {
-        for(int i = 0; i < this.contracts.size(); i++) {
-            if(this.contracts.get(i).getConsumerId() == id) {
+        for (int i = 0; i < this.contracts.size(); i++) {
+            if (this.contracts.get(i).getConsumerId() == id) {
                 this.contracts.remove(i);
                 i--;
                 this.setNoOfClients(this.getNoOfClients() - 1);

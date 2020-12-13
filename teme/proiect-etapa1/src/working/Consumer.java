@@ -2,24 +2,36 @@ package working;
 
 import java.util.List;
 
-public class Consumer extends Entity implements ConsumerInterface{
+public class Consumer extends Entity implements ConsumerInterface {
     private long monthlyIncome;
     private long penalty;
+    private long remainingPayment;
     private ClientContract contract = new ClientContract();
 
-    public Consumer() { super(); }
+    public Consumer() {
+        super();
+    }
 
-    public Consumer(int id, long budget, long monthlyIncome) {
+    public Consumer(final int id, final long budget, final long monthlyIncome) {
         super(id, budget);
         this.monthlyIncome = monthlyIncome;
         penalty = 0;
+        remainingPayment = 0;
+    }
+
+    public long getRemainingPayment() {
+        return remainingPayment;
+    }
+
+    public void setRemainingPayment(final long remainingPayment) {
+        this.remainingPayment = remainingPayment;
     }
 
     public long getMonthlyIncome() {
         return monthlyIncome;
     }
 
-    public void setMonthlyIncome(long monthlyIncome) {
+    public void setMonthlyIncome(final long monthlyIncome) {
         this.monthlyIncome = monthlyIncome;
     }
 
@@ -27,7 +39,7 @@ public class Consumer extends Entity implements ConsumerInterface{
         return penalty;
     }
 
-    public void setPenalty(long penalty) {
+    public void setPenalty(final long penalty) {
         this.penalty = penalty;
     }
 
@@ -41,8 +53,8 @@ public class Consumer extends Entity implements ConsumerInterface{
 
     @Override
     public String toString() {
-        return "Consumer{" +
-                " id=" + super.getId()
+        return "Consumer{"
+                + " id=" + super.getId()
                 + " budget=" + super.getBudget()
                 + " isBankrupt=" + super.isBankrupt()
                 + " monthlyIncome=" + monthlyIncome
@@ -56,84 +68,92 @@ public class Consumer extends Entity implements ConsumerInterface{
         this.setBudget(this.getBudget() + monthlyIncome);
     }
 
-    public void giveRate(Distributor distributor, long price){
+    @Override
+    public void giveRate(Distributor distributor, long price) {
                 distributor.setBudget(distributor.getBudget() + price);
     }
-
 
     @Override
     public void payRate(List<Distributor> distributors) {
 
         long diff = this.getBudget() - this.contract.getPrice();
-        int id = -1;
+        int id = Constants.BEGINNING_ID;
         //find the distributor
-        for(Distributor distributor : distributors) {
-            if(this.contract.getDistributorId() == distributor.getId()) {
+        for (Distributor distributor : distributors) {
+            if (this.contract.getDistributorId() == distributor.getId()) {
                 id = distributor.getId();
             }
         }
 
-        if( diff <= 0 && this.penalty == 0) {
+        //case: it's the first month when the consumer can't pay the rate
+        if ( diff < 0 && this.penalty == 0) {
             this.penalty++;
-            this.contract.setRemainedContractMonths(this.contract.getRemainedContractMonths()-1);
-            //decrease number of months in the distributor contract as well
-            for(int i = 0; i < distributors.get(id).getContracts().size(); i++) {
-                if(distributors.get(id).getContracts().get(i).getConsumerId() == this.getId())
-                    distributors.get(id).getContracts().get(i).setRemainedContractMonths(
-                            this.contract.getRemainedContractMonths());
-            }
+            this.remainingPayment = this.contract.getPrice();
+            decreaseNoOfMonths(distributors, id);
             return;
         }
 
-        if(penalty == 1) {
-            long price = Math.round(Math.floor(this.contract.getPrice() * 1.2)
+        //case: consumer has already one month in which he couldn't pay the rate
+        if (penalty == 1) {
+            long price = Math.round(Math.floor(this.remainingPayment * Constants.PENALTY_PERCENTAGE)
                     + this.contract.getPrice());
 
-            if((this.getBudget() - price) <= 0) {
+            if ((this.getBudget() - price) < 0) {
                 this.setBankrupt(true);
                 return;
             }
 
             this.setBudget(this.getBudget() - price);
             this.giveRate(distributors.get(id),price);
-            this.penalty--;
+            System.out.println(distributors.get(id).getBudget());
+            this.penalty --;
         }
 
-        if(diff > 0 && this.penalty == 0) {
+        //case: consumer normally pays the rate
+        if (diff >= 0 && this.penalty == 0) {
             this.setBudget(this.getBudget() - this.contract.getPrice());
             this.giveRate(distributors.get(id), this.contract.getPrice());
         }
 
+        decreaseNoOfMonths(distributors, id);
+    }
+
+    private void decreaseNoOfMonths(List<Distributor> distributors, int id) {
         this.contract.setRemainedContractMonths(this.contract.getRemainedContractMonths()-1);
-        for(int i = 0; i < distributors.get(id).getContracts().size(); i++) {
-            if(distributors.get(id).getContracts().get(i).getConsumerId() == this.getId())
+        for (int i = 0; i < distributors.get(id).getContracts().size(); i++) {
+            if (distributors.get(id).getContracts().get(i).getConsumerId() == this.getId()) {
                 distributors.get(id).getContracts().get(i).setRemainedContractMonths(
                         this.contract.getRemainedContractMonths());
+            }
         }
-
     }
 
 
-
     @Override
-    public int buildContract(List<Distributor> distributors) { //cauta distribuitorul cu cel mai mic pret la contract
-        //si completeaza contractul din clasa ClientContract cu datele acestuia.
-        long min = 1000;
-        int id1 = -1;
-        for(Distributor distributor : distributors) {
-            //daca sunt doi dstributori cu acelasi pret min se ia primul
-            if (distributor.isBankrupt() == false) {
+    public int buildContract(List<Distributor> distributors) {
+        long min = Constants.MIN;
+        int id = Constants.BEGINNING_ID;
+        for (Distributor distributor : distributors) {
+            if (!distributor.isBankrupt()) {
                 if (distributor.getPriceOfContract() <= min) {
                     min = distributor.getPriceOfContract();
-                    id1 = distributor.getId();
                 }
             }
         }
+        for (Distributor distributor : distributors) {
 
-        this.contract.setRemainedContractMonths(distributors.get(id1).getContractLength());
-        this.contract.setDistributorId(id1);
-        this.contract.setPrice(distributors.get(id1).getPriceOfContract());
+            if (!distributor.isBankrupt() && distributor.getPriceOfContract() == min) {
+                id = distributor.getId();
+                break;
+            }
+        }
 
-        return id1;
+        if(id != Constants.BEGINNING_ID) {
+            this.contract.setRemainedContractMonths(distributors.get(id).getContractLength());
+            this.contract.setDistributorId(id);
+            this.contract.setPrice(distributors.get(id).getPriceOfContract());
+        }
+
+        return id;
     }
 }

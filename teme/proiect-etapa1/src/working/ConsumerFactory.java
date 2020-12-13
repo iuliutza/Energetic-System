@@ -1,17 +1,14 @@
 package working;
 
-public class ConsumerFactory extends AbstractFactory{
-
+public final class ConsumerFactory extends AbstractFactory {
     @Override
-    public Consumer createConsumer(int id, long budget, long monthlyIncome) {
-        return new Consumer(id,budget,monthlyIncome);
-//        int id, long budget, long monthlyIncome);
+    public Consumer createConsumer(final int id, final long budget, final long monthlyIncome) {
+        return new Consumer(id, budget, monthlyIncome);
     }
 
     @Override
-    public Distributor createDistributor(int id, long budget, int contractLength, long pCost, long iCost) {
+    public Distributor createDistributor(final int id, final long budget, final int contractLength,
+                                         final long pCost, final long iCost) {
         return null;
     }
-
-
 }

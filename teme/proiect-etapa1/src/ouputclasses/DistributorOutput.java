@@ -1,17 +1,18 @@
-package ouputClasses;
+package ouputclasses;
 import working.Contract;
 
 import java.util.List;
 
-public class DistributorOutput {
+public final class DistributorOutput {
     private int id;
     private long budget;
     private boolean isBankrupt;
     private List<Contract> contracts;
 
-    public DistributorOutput(int id, float budget, boolean isBankrupt, List<Contract> contracts) {
+    public DistributorOutput(final int id, final long budget, final boolean isBankrupt,
+                             final List<Contract> contracts) {
         this.id = id;
-        this.budget = (long)budget;
+        this.budget = budget;
         this.isBankrupt = isBankrupt;
         this.contracts = contracts;
     }
@@ -20,15 +21,15 @@ public class DistributorOutput {
         return id;
     }
 
-    public void setId(int id) {
+    public void setId(final int id) {
         this.id = id;
     }
 
-    public float getBudget() {
+    public long getBudget() {
         return budget;
     }
 
-    public void setBudget(float budget) {
+    public void setBudget(final long budget) {
         this.budget = (long) budget;
     }
 
@@ -36,7 +37,7 @@ public class DistributorOutput {
         return isBankrupt;
     }
 
-    public void setIsBankrupt(boolean bankrupt) {
+    public void setIsBankrupt(final boolean bankrupt) {
         isBankrupt = bankrupt;
     }
 
@@ -44,17 +45,17 @@ public class DistributorOutput {
         return contracts;
     }
 
-    public void setContracts(List<Contract> contracts) {
+    public void setContracts(final List<Contract> contracts) {
         this.contracts = contracts;
     }
 
     @Override
     public String toString() {
-        return "DistributorOutput{" +
-                "id=" + id +
-                ", budget=" + budget +
-                ", isBankrupt=" + isBankrupt +
-                ", contracts=" + contracts +
-                '}';
+        return "DistributorOutput{"
+                + "id=" + id
+                + ", budget=" + budget
+                + ", isBankrupt=" + isBankrupt
+                + ", contracts=" + contracts
+                + '}';
     }
 }
