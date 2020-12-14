@@ -106,7 +106,7 @@ public final class Consumer extends Entity implements ConsumerInterface {
             System.out.println(distributors.get(id).getBudget());
             this.penalty--;
         }
-        //case: consumer normally pays the rate
+        //case: consumer pays the rate normally
         if (diff >= 0 && this.penalty == 0) {
             this.setBudget(this.getBudget() - this.contract.getPrice());
             this.giveRate(distributors.get(id), this.contract.getPrice());
