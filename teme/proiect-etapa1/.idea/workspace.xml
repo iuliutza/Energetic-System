@@ -5,9 +5,60 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="62c63c35-2f15-45b0-a391-6e1cec7ed447" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/checker/resources/README" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/strategies/EnergyChoiceStrategyType.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/README.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/game/Consumer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/game/Consumer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/checker/resources/config.json" beforeDir="false" afterPath="$PROJECT_DIR$/checker/resources/config.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/checker/resources/in/basic_1.json" beforeDir="false" afterPath="$PROJECT_DIR$/checker/resources/in/basic_1.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/checker/resources/in/basic_10.json" beforeDir="false" afterPath="$PROJECT_DIR$/checker/resources/in/basic_10.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/checker/resources/in/basic_11.json" beforeDir="false" afterPath="$PROJECT_DIR$/checker/resources/in/basic_11.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/checker/resources/in/basic_12.json" beforeDir="false" afterPath="$PROJECT_DIR$/checker/resources/in/basic_12.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/checker/resources/in/basic_13.json" beforeDir="false" afterPath="$PROJECT_DIR$/checker/resources/in/basic_13.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/checker/resources/in/basic_14.json" beforeDir="false" afterPath="$PROJECT_DIR$/checker/resources/in/basic_14.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/checker/resources/in/basic_15.json" beforeDir="false" afterPath="$PROJECT_DIR$/checker/resources/in/basic_15.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/checker/resources/in/basic_2.json" beforeDir="false" afterPath="$PROJECT_DIR$/checker/resources/in/basic_2.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/checker/resources/in/basic_3.json" beforeDir="false" afterPath="$PROJECT_DIR$/checker/resources/in/basic_3.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/checker/resources/in/basic_4.json" beforeDir="false" afterPath="$PROJECT_DIR$/checker/resources/in/basic_4.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/checker/resources/in/basic_5.json" beforeDir="false" afterPath="$PROJECT_DIR$/checker/resources/in/basic_5.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/checker/resources/in/basic_6.json" beforeDir="false" afterPath="$PROJECT_DIR$/checker/resources/in/basic_6.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/checker/resources/in/basic_7.json" beforeDir="false" afterPath="$PROJECT_DIR$/checker/resources/in/basic_7.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/checker/resources/in/basic_8.json" beforeDir="false" afterPath="$PROJECT_DIR$/checker/resources/in/basic_8.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/checker/resources/in/basic_9.json" beforeDir="false" afterPath="$PROJECT_DIR$/checker/resources/in/basic_9.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/checker/resources/out/out_1.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/checker/resources/out/out_10.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/checker/resources/out/out_11.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/checker/resources/out/out_12.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/checker/resources/out/out_13.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/checker/resources/out/out_2.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/checker/resources/out/out_3.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/checker/resources/out/out_4.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/checker/resources/out/out_5.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/checker/resources/out/out_6.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/checker/resources/out/out_7.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/checker/resources/out/out_8.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/checker/resources/out/out_9.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/checker/resources/out/results.out" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/checker/resources/ref/basic_1.json" beforeDir="false" afterPath="$PROJECT_DIR$/checker/resources/ref/basic_1.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/checker/resources/ref/basic_10.json" beforeDir="false" afterPath="$PROJECT_DIR$/checker/resources/ref/basic_10.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/checker/resources/ref/basic_11.json" beforeDir="false" afterPath="$PROJECT_DIR$/checker/resources/ref/basic_11.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/checker/resources/ref/basic_12.json" beforeDir="false" afterPath="$PROJECT_DIR$/checker/resources/ref/basic_12.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/checker/resources/ref/basic_13.json" beforeDir="false" afterPath="$PROJECT_DIR$/checker/resources/ref/basic_13.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/checker/resources/ref/basic_14.json" beforeDir="false" afterPath="$PROJECT_DIR$/checker/resources/ref/basic_14.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/checker/resources/ref/basic_15.json" beforeDir="false" afterPath="$PROJECT_DIR$/checker/resources/ref/basic_15.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/checker/resources/ref/basic_2.json" beforeDir="false" afterPath="$PROJECT_DIR$/checker/resources/ref/basic_2.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/checker/resources/ref/basic_3.json" beforeDir="false" afterPath="$PROJECT_DIR$/checker/resources/ref/basic_3.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/checker/resources/ref/basic_4.json" beforeDir="false" afterPath="$PROJECT_DIR$/checker/resources/ref/basic_4.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/checker/resources/ref/basic_5.json" beforeDir="false" afterPath="$PROJECT_DIR$/checker/resources/ref/basic_5.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/checker/resources/ref/basic_6.json" beforeDir="false" afterPath="$PROJECT_DIR$/checker/resources/ref/basic_6.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/checker/resources/ref/basic_7.json" beforeDir="false" afterPath="$PROJECT_DIR$/checker/resources/ref/basic_7.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/checker/resources/ref/basic_8.json" beforeDir="false" afterPath="$PROJECT_DIR$/checker/resources/ref/basic_8.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/checker/resources/ref/basic_9.json" beforeDir="false" afterPath="$PROJECT_DIR$/checker/resources/ref/basic_9.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/proiect-etapa1/README.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/proiect-etapa1/checker/checkstyle-8.36.2-all.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/proiect-etapa1/checker/poo_checks.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Test.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/checker/Checkstyle.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/checker/Checkstyle.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/checker/poo_checks.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/checker/poo_checks.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -37,7 +88,7 @@
     <property name="aspect.path.notification.shown" value="true" />
     <property name="dart.analysis.tool.window.visible" value="false" />
     <property name="extract.method.default.visibility" value="private" />
-    <property name="last_opened_file_path" value="$USER_HOME$/Downloads/jackson-databind-2.9.7.jar" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
@@ -61,6 +112,17 @@
     <configuration name="Test" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Test" />
       <module name="proiect-etapa1" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
+      <option name="arquillianRunConfiguration">
+        <value>
+          <option name="containerStateName" value="" />
+        </value>
+      </option>
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -89,7 +151,12 @@
       <workItem from="1607857004709" duration="9098000" />
       <workItem from="1607877127868" duration="1279000" />
       <workItem from="1607888788746" duration="4445000" />
-      <workItem from="1607929911118" duration="8736000" />
+      <workItem from="1607929911118" duration="8773000" />
+      <workItem from="1607943449956" duration="609000" />
+      <workItem from="1608116773620" duration="174000" />
+      <workItem from="1610364064158" duration="11000" />
+      <workItem from="1610385161456" duration="136000" />
+      <workItem from="1610385319825" duration="741000" />
     </task>
     <task id="LOCAL-00001" summary="checkstyle of output classes on point">
       <created>1607865311119</created>
@@ -126,7 +193,21 @@
       <option name="project" value="LOCAL" />
       <updated>1607893930236</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="readme part 2">
+      <created>1607940662631</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1607940662631</updated>
+    </task>
+    <task id="LOCAL-00007" summary="readme part 2">
+      <created>1607940676404</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1607940676404</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -137,7 +218,8 @@
     <MESSAGE value="checkstyle of input classes on point" />
     <MESSAGE value="done!" />
     <MESSAGE value="readme part 1" />
-    <option name="LAST_COMMIT_MESSAGE" value="readme part 1" />
+    <MESSAGE value="readme part 2" />
+    <option name="LAST_COMMIT_MESSAGE" value="readme part 2" />
   </component>
   <component name="WindowStateProjectService">
     <state x="298" y="183" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1607844537761">
@@ -152,11 +234,11 @@
       <screen x="0" y="27" width="3600" height="989" />
     </state>
     <state x="593" y="419" width="494" height="226" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/0.27.3600.989@0.27.3600.989" timestamp="1607865588637" />
-    <state x="160" y="70" width="912" height="916" key="CommitChangelistDialog2" timestamp="1607893930150">
+    <state x="160" y="70" width="912" height="916" key="CommitChangelistDialog2" timestamp="1607940676244">
       <screen x="0" y="27" width="1680" height="989" />
     </state>
     <state x="343" y="70" width="984" height="916" key="CommitChangelistDialog2/0.27.3600.989@0.27.3600.989" timestamp="1607866305493" />
-    <state x="160" y="70" width="912" height="916" key="CommitChangelistDialog2/1680.0.1920.1080/0.27.1680.989@0.27.1680.989" timestamp="1607893930150" />
+    <state x="160" y="70" width="912" height="916" key="CommitChangelistDialog2/1680.0.1920.1080/0.27.1680.989@0.27.1680.989" timestamp="1607940676244" />
     <state x="1680" y="272" width="735" height="520" key="FileChooserDialogImpl" timestamp="1607863372841">
       <screen x="0" y="27" width="3600" height="989" />
     </state>
@@ -206,11 +288,11 @@
       <screen x="0" y="27" width="1680" height="989" />
     </state>
     <state x="329" y="160" width="1022" height="737" key="SettingsEditor/1680.0.1920.1080/0.27.1680.989@0.27.1680.989" timestamp="1607844503670" />
-    <state x="203" y="261" width="528" height="535" key="Vcs.Push.Dialog.v2" timestamp="1607893935636">
+    <state x="203" y="261" width="528" height="535" key="Vcs.Push.Dialog.v2" timestamp="1607940680268">
       <screen x="0" y="27" width="1680" height="989" />
     </state>
     <state x="435" y="261" width="800" height="535" key="Vcs.Push.Dialog.v2/0.27.3600.989@0.27.3600.989" timestamp="1607866308487" />
-    <state x="203" y="261" width="528" height="535" key="Vcs.Push.Dialog.v2/1680.0.1920.1080/0.27.1680.989@0.27.1680.989" timestamp="1607893935636" />
+    <state x="203" y="261" width="528" height="535" key="Vcs.Push.Dialog.v2/1680.0.1920.1080/0.27.1680.989@0.27.1680.989" timestamp="1607940680268" />
     <state x="741" y="436" width="428" height="177" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1607890167249">
       <screen x="0" y="27" width="1680" height="989" />
     </state>

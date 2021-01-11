@@ -5,6 +5,7 @@ Starting audit...
 [ERROR] /home/iulia/IdeaProjects/Project-etapa1/teme/proiect-etapa1/./src/game/Distributor.java:129:44: 'productionCost' hides a field. [HiddenField]
 [ERROR] /home/iulia/IdeaProjects/Project-etapa1/teme/proiect-etapa1/./src/game/Constants.java:3:1: Utility classes should not have a public or default constructor. [HideUtilityClassConstructor]
 [ERROR] /home/iulia/IdeaProjects/Project-etapa1/teme/proiect-etapa1/./src/Main.java:17:1: Utility classes should not have a public or default constructor. [HideUtilityClassConstructor]
+[ERROR] /home/iulia/IdeaProjects/Project-etapa1/teme/proiect-etapa1/./src/strategies/EnergyChoiceStrategyType.java:10:25: Variable 'label' must be private and have accessor methods. [VisibilityModifier]
 [ERROR] /home/iulia/IdeaProjects/Project-etapa1/teme/proiect-etapa1/./src/inputclasses/InputLoader.java:29:40: 'inputPath' hides a field. [HiddenField]
 Audit done.
-Checkstyle ends with 7 errors.
+Checkstyle ends with 8 errors.
