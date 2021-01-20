@@ -5,13 +5,16 @@ import java.util.List;
 public final class InitialData {
     private List<ConsumerInput> consumers;
     private List<DistributorInput> distributors;
+    private List<ProducerInput> producers;
 
     public InitialData() { }
 
     public InitialData(final List<ConsumerInput> consumers,
-                       final List<DistributorInput> distributors) {
+                       final List<DistributorInput> distributors,
+                       final List<ProducerInput> producers) {
         this.consumers = consumers;
         this.distributors = distributors;
+        this.producers = producers;
     }
 
     public List<ConsumerInput> getConsumers() {
@@ -30,11 +33,20 @@ public final class InitialData {
         this.distributors = distributors;
     }
 
+    public List<ProducerInput> getProducers() {
+        return producers;
+    }
+
+    public void setProducers(List<ProducerInput> producers) {
+        this.producers = producers;
+    }
+
     @Override
     public String toString() {
-        return "InitialData{"
-                + "consumers=" + consumers
-                + ", distributors=" + distributors
-                + '}';
+        return "InitialData{" +
+                "consumers=" + consumers +
+                ", distributors=" + distributors +
+                ", producers=" + producers +
+                '}';
     }
 }

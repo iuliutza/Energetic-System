@@ -1,5 +1,8 @@
 package game;
 
+import game.Consumer.Consumer;
+import game.Distributor.Distributor;
+
 public abstract class AbstractFactory {
     /**
      *
@@ -15,10 +18,9 @@ public abstract class AbstractFactory {
      * @param id distributor's id
      * @param budget distributor's budget
      * @param contractLength distributor's length of contract
-     * @param pCost distributor's production cost
      * @param iCost distributor's infrastructure cost
      * @return returns new instance of distributor
      */
     public abstract Distributor createDistributor(int id, long budget, int contractLength,
-                                                  long pCost, long iCost);
+                                                  long iCost, int energyNeededKW, String strategy);
 }

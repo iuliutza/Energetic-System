@@ -1,4 +1,4 @@
-package game;
+package game.Consumer;
 
 public final class ClientContract {
     private int distributorId;

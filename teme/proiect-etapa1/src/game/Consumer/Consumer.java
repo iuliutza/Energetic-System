@@ -1,4 +1,8 @@
-package game;
+package game.Consumer;
+
+import game.Constants;
+import game.Distributor.Distributor;
+import game.Entity;
 
 import java.util.List;
 
@@ -6,6 +10,7 @@ public final class Consumer extends Entity implements ConsumerInterface {
     private long monthlyIncome;
     private long penalty;
     private long remainingPayment;
+    private int lastDistributor;
     private ClientContract contract = new ClientContract();
 
     public Consumer() {
@@ -51,6 +56,14 @@ public final class Consumer extends Entity implements ConsumerInterface {
         this.contract = contract;
     }
 
+    public int getLastDistributor() {
+        return lastDistributor;
+    }
+
+    public void setLastDistributor(int lastDistributor) {
+        this.lastDistributor = lastDistributor;
+    }
+
     @Override
     public String toString() {
         return "Consumer{"
@@ -94,16 +107,23 @@ public final class Consumer extends Entity implements ConsumerInterface {
         }
 
         //case: consumer has already one month in which he couldn't pay the rate
+        //AICI MAI AM DE LUCRAT!!!!!!!
         if (penalty == 1) {
-            long price = Math.round(Math.floor(this.remainingPayment * Constants.PENALTY_PERCENTAGE)
-                    + this.contract.getPrice());
+            long price;
+
+            if(this.lastDistributor != this.contract.getDistributorId()) {
+                price  = Math.round(Math.floor(this.remainingPayment * Constants.PENALTY_PERCENTAGE));
+            }
+            else {
+                price = Math.round(Math.floor(this.remainingPayment * Constants.PENALTY_PERCENTAGE)
+                        + this.contract.getPrice());
+            }
             if ((this.getBudget() - price) < 0) {
                 this.setBankrupt(true);
                 return;
             }
             this.setBudget(this.getBudget() - price);
             this.giveRate(distributors.get(id), price);
-            System.out.println(distributors.get(id).getBudget());
             this.penalty--;
         }
         //case: consumer pays the rate normally
@@ -129,6 +149,7 @@ public final class Consumer extends Entity implements ConsumerInterface {
     public int buildContract(final List<Distributor> distributors) {
         long min = Constants.MIN;
         int id = Constants.BEGINNING_ID;
+        this.lastDistributor = this.contract.getDistributorId();
         for (Distributor distributor : distributors) {
             if (!distributor.isBankrupt()) {
                 if (distributor.getPriceOfContract() <= min) {

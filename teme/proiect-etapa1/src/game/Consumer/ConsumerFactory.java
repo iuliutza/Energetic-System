@@ -1,4 +1,8 @@
-package game;
+package game.Consumer;
+
+import game.AbstractFactory;
+import game.Consumer.Consumer;
+import game.Distributor.Distributor;
 
 public final class ConsumerFactory extends AbstractFactory {
     @Override
@@ -8,7 +12,7 @@ public final class ConsumerFactory extends AbstractFactory {
 
     @Override
     public Distributor createDistributor(final int id, final long budget, final int contractLength,
-                                         final long pCost, final long iCost) {
+                                         final long iCost, final int energyNeededKW, final String strategy) {
         return null;
     }
 }

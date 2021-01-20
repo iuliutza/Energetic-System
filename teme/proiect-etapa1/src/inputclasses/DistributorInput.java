@@ -3,18 +3,19 @@ package inputclasses;
 public final class DistributorInput extends ShowEntity {
     private int contractLength;
     private long initialInfrastructureCost;
-    private long initialProductionCost;
+    private int energyNeededKW;
+    private String producerStrategy;
 
-    public DistributorInput() { }
+    public DistributorInput() { super(); }
 
-    public DistributorInput(final int id, final long initialBudget,
-                            final int contractLength,
-                            final long initialInfrastructureCost,
-                            final long initialProductionCost) {
+    public DistributorInput(final int id, final long initialBudget, int contractLength,
+                            long initialInfrastructureCost, int energyNeededKW,
+                            String producerStrategy) {
         super(id, initialBudget);
         this.contractLength = contractLength;
         this.initialInfrastructureCost = initialInfrastructureCost;
-        this.initialProductionCost = initialProductionCost;
+        this.energyNeededKW = energyNeededKW;
+        this.producerStrategy = producerStrategy;
     }
 
     public int getContractLength() {
@@ -25,18 +26,22 @@ public final class DistributorInput extends ShowEntity {
         return initialInfrastructureCost;
     }
 
-    public long getInitialProductionCost() {
-        return initialProductionCost;
+    public int getEnergyNeededKW() {
+        return energyNeededKW;
     }
+
+    public String getProducerStrategy() {
+        return producerStrategy;
+    }
+
 
     @Override
     public String toString() {
-        return "DistributorInput{"
-                + "contractLength=" + contractLength
-                + ", initialInfrastructureCost=" + initialInfrastructureCost
-                + ", initialProductionCost=" + initialProductionCost
-                + ", id=" + super.getId()
-                + ", initialBudget=" + super.getInitialBudget()
-                + '}';
+        return "DistributorInput{" +
+                "contractLength=" + contractLength +
+                ", initialInfrastructureCost=" + initialInfrastructureCost +
+                ", energyNeededKW=" + energyNeededKW +
+                ", producerStrategy='" + producerStrategy + '\'' +
+                '}';
     }
 }

@@ -1,16 +1,14 @@
 package inputclasses;
 
-public final class CostsChanges {
+public final class DistributorChanges {
     private int id;
     private long infrastructureCost;
-    private long productionCost;
 
-    public CostsChanges() { }
+    public DistributorChanges() { }
 
-    public CostsChanges(final int id, final long infrastructureCost, final long productionCost) {
+    public DistributorChanges(final int id, final long infrastructureCost) {
         this.id = id;
         this.infrastructureCost = infrastructureCost;
-        this.productionCost = productionCost;
     }
 
     public int getId() {
@@ -21,10 +19,6 @@ public final class CostsChanges {
         return infrastructureCost;
     }
 
-    public long getProductionCost() {
-        return productionCost;
-    }
-
     public void setId(final int id) {
         this.id = id;
     }
@@ -33,16 +27,11 @@ public final class CostsChanges {
         this.infrastructureCost = infrastructureCost;
     }
 
-    public void setProductionCost(final long productionCost) {
-        this.productionCost = productionCost;
-    }
-
     @Override
     public String toString() {
         return "CostChanges{"
                 + "id=" + id
                 + ", infrastructureCost=" + infrastructureCost
-                + ", productionCost=" + productionCost
                 + '}';
     }
 }

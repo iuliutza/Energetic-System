@@ -4,37 +4,48 @@ import java.util.List;
 
 public final class MonthlyUpdates {
     private List<ConsumerInput> newConsumers;
-    private List<CostsChanges> costsChanges;
+    private List<DistributorChanges> distributorChanges;
+    private List<ProducerChanges> producerChanges;
 
     public MonthlyUpdates() { }
 
-    public MonthlyUpdates(final List<ConsumerInput> newConsumers,
-                          final List<CostsChanges> costsChanges) {
+    public MonthlyUpdates(List<ConsumerInput> newConsumers,
+                          List<DistributorChanges> distributorChanges,
+                          List<ProducerChanges> producerChanges) {
         this.newConsumers = newConsumers;
-        this.costsChanges = costsChanges;
+        this.distributorChanges = distributorChanges;
+        this.producerChanges = producerChanges;
     }
 
     public List<ConsumerInput> getNewConsumers() {
         return newConsumers;
     }
 
-    public List<CostsChanges> getCostsChanges() {
-        return costsChanges;
-    }
-
     public void setNewConsumers(final List<ConsumerInput> newConsumers) {
         this.newConsumers = newConsumers;
     }
 
-    public void setCostsChanges(final List<CostsChanges> costChanges) {
-        this.costsChanges = costChanges;
+    public List<DistributorChanges> getDistributorChanges() {
+        return distributorChanges;
+    }
+
+    public void setDistributorChanges(List<DistributorChanges> distributorChanges) {
+        this.distributorChanges = distributorChanges;
+    }
+
+    public List<ProducerChanges> getProducerChanges() {
+        return producerChanges;
+    }
+
+    public void setProducerChanges(List<ProducerChanges> producerChanges) {
+        this.producerChanges = producerChanges;
     }
 
     @Override
     public String toString() {
         return "MonthlyUpdates{"
                 + "newConsumers=" + newConsumers
-                + ", costsChanges=" + costsChanges
+                + ", costsChanges=" + distributorChanges
                 + '}';
     }
 }

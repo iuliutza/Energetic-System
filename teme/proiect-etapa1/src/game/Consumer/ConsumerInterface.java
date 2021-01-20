@@ -1,4 +1,6 @@
-package game;
+package game.Consumer;
+
+import game.Distributor.Distributor;
 
 import java.util.List;
 

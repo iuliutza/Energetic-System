@@ -1,47 +1,41 @@
-package game;
+package game.Distributor;
+
+import game.producer.Producer;
+
+import java.util.List;
 
 public interface DistributorInterface {
     /**
      * Updates the infrastructure and production costs with the monthly updates.
      * @param iCost the infrastructure cost
-     * @param pCost the production cost
      */
-    void updateCosts(long iCost, long pCost);
+    void updateCosts(long iCost);
 
     /**
      * Calculates the cost of the contract. There are two situations: when there are no clients,
      * and where there are.
-     * @param iCost the infrastructure cost
-     * @param pCost the production cost
-     * @param profit the profit
-     * @param noOfClients the number of clients
      */
-    void updateCostContract(long iCost, long pCost, long profit, int noOfClients);
+    void updateCostContract();
 
     /**
      * Calculates the monthly expenses of the distributor, subtracts them from the budget of the
      * distributor and checks is the distributor is bankrupt.
-     * @param iCost the infrastructure cost
-     * @param pCost the production cost
-     * @param noOfClients the number of clients
      */
-    void payExpenses(long iCost, long pCost, int noOfClients);
+    void payExpenses();
 
     /**
      * Calculates the profit every month, and stores it in the "profit" field of the Distributor
      * class.
-     * @param productionCost the production cost
+     *
      */
-    void calculateProfit(long productionCost);
+    void calculateProfit();
 
     /**
      * Every time a consumer picks this distributor, the distributor saves its contract in an
      * array list. This function creates the contract and adds it to the array.
      * @param consumerId the consumer's id
-     * @param price the price of the contract
-     * @param remainedContractMonths the number of months remaining in the contract
      */
-    void updateContracts(int consumerId, long price, int remainedContractMonths);
+    void updateContracts(int consumerId);
 
     /**
      * Deletes the contracts that have 0 remaining months/
@@ -53,4 +47,8 @@ public interface DistributorInterface {
      * @param id the id of the customer
      */
     void deleteContract(int id);
+
+    void calculateProductionCost();
+
+    void chooseProducers(List<Producer> producers);
 }

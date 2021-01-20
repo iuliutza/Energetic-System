@@ -5,60 +5,45 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="62c63c35-2f15-45b0-a391-6e1cec7ed447" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/checker/resources/README" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/strategies/EnergyChoiceStrategyType.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/checker/resources/out/out_4.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/checker/resources/ref/complex_1.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/checker/resources/ref/complex_2.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/checker/resources/ref/complex_3.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/checker/resources/ref/complex_4.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/checker/resources/ref/complex_5.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/entities/EnergyType.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/game/Distributor/Observer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/game/producer/MonthlyStats.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/game/producer/Producer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/game/producer/ProducerInterface.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/inputclasses/ProducerChanges.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/inputclasses/ProducerInput.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ouputclasses/ProducerOutput.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/strategies/GreenStrategy.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/strategies/PriceStrategy.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/strategies/QuantityStrategy.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/strategies/Strategy.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/strategies/StrategyContext.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/checker/resources/config.json" beforeDir="false" afterPath="$PROJECT_DIR$/checker/resources/config.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/checker/resources/in/basic_1.json" beforeDir="false" afterPath="$PROJECT_DIR$/checker/resources/in/basic_1.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/checker/resources/in/basic_10.json" beforeDir="false" afterPath="$PROJECT_DIR$/checker/resources/in/basic_10.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/checker/resources/in/basic_11.json" beforeDir="false" afterPath="$PROJECT_DIR$/checker/resources/in/basic_11.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/checker/resources/in/basic_12.json" beforeDir="false" afterPath="$PROJECT_DIR$/checker/resources/in/basic_12.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/checker/resources/in/basic_13.json" beforeDir="false" afterPath="$PROJECT_DIR$/checker/resources/in/basic_13.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/checker/resources/in/basic_14.json" beforeDir="false" afterPath="$PROJECT_DIR$/checker/resources/in/basic_14.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/checker/resources/in/basic_15.json" beforeDir="false" afterPath="$PROJECT_DIR$/checker/resources/in/basic_15.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/checker/resources/in/basic_2.json" beforeDir="false" afterPath="$PROJECT_DIR$/checker/resources/in/basic_2.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/checker/resources/in/basic_3.json" beforeDir="false" afterPath="$PROJECT_DIR$/checker/resources/in/basic_3.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/checker/resources/in/basic_4.json" beforeDir="false" afterPath="$PROJECT_DIR$/checker/resources/in/basic_4.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/checker/resources/in/basic_5.json" beforeDir="false" afterPath="$PROJECT_DIR$/checker/resources/in/basic_5.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/checker/resources/in/basic_6.json" beforeDir="false" afterPath="$PROJECT_DIR$/checker/resources/in/basic_6.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/checker/resources/in/basic_7.json" beforeDir="false" afterPath="$PROJECT_DIR$/checker/resources/in/basic_7.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/checker/resources/in/basic_8.json" beforeDir="false" afterPath="$PROJECT_DIR$/checker/resources/in/basic_8.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/checker/resources/in/basic_9.json" beforeDir="false" afterPath="$PROJECT_DIR$/checker/resources/in/basic_9.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/checker/resources/out/out_1.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/checker/resources/out/out_10.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/checker/resources/out/out_11.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/checker/resources/out/out_12.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/checker/resources/out/out_13.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/checker/resources/out/out_2.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/checker/resources/out/out_3.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/checker/resources/out/out_4.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/checker/resources/out/out_5.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/checker/resources/out/out_6.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/checker/resources/out/out_7.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/checker/resources/out/out_8.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/checker/resources/out/out_9.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/checker/resources/out/results.out" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/checker/resources/ref/basic_1.json" beforeDir="false" afterPath="$PROJECT_DIR$/checker/resources/ref/basic_1.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/checker/resources/ref/basic_10.json" beforeDir="false" afterPath="$PROJECT_DIR$/checker/resources/ref/basic_10.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/checker/resources/ref/basic_11.json" beforeDir="false" afterPath="$PROJECT_DIR$/checker/resources/ref/basic_11.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/checker/resources/ref/basic_12.json" beforeDir="false" afterPath="$PROJECT_DIR$/checker/resources/ref/basic_12.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/checker/resources/ref/basic_13.json" beforeDir="false" afterPath="$PROJECT_DIR$/checker/resources/ref/basic_13.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/checker/resources/ref/basic_14.json" beforeDir="false" afterPath="$PROJECT_DIR$/checker/resources/ref/basic_14.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/checker/resources/ref/basic_15.json" beforeDir="false" afterPath="$PROJECT_DIR$/checker/resources/ref/basic_15.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/checker/resources/ref/basic_2.json" beforeDir="false" afterPath="$PROJECT_DIR$/checker/resources/ref/basic_2.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/checker/resources/ref/basic_3.json" beforeDir="false" afterPath="$PROJECT_DIR$/checker/resources/ref/basic_3.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/checker/resources/ref/basic_4.json" beforeDir="false" afterPath="$PROJECT_DIR$/checker/resources/ref/basic_4.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/checker/resources/ref/basic_5.json" beforeDir="false" afterPath="$PROJECT_DIR$/checker/resources/ref/basic_5.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/checker/resources/ref/basic_6.json" beforeDir="false" afterPath="$PROJECT_DIR$/checker/resources/ref/basic_6.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/checker/resources/ref/basic_7.json" beforeDir="false" afterPath="$PROJECT_DIR$/checker/resources/ref/basic_7.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/checker/resources/ref/basic_8.json" beforeDir="false" afterPath="$PROJECT_DIR$/checker/resources/ref/basic_8.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/checker/resources/ref/basic_9.json" beforeDir="false" afterPath="$PROJECT_DIR$/checker/resources/ref/basic_9.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/proiect-etapa1/README.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/proiect-etapa1/checker/checkstyle-8.36.2-all.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/proiect-etapa1/checker/poo_checks.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Test.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/checker/Checkstyle.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/checker/Checkstyle.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/checker/poo_checks.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/checker/poo_checks.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/checkstyle.txt" beforeDir="false" afterPath="$PROJECT_DIR$/checkstyle.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/game/AbstractFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/game/AbstractFactory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/game/ClientContract.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/game/Consumer/ClientContract.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/game/Consumer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/game/Consumer/Consumer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/game/ConsumerFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/game/Consumer/ConsumerFactory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/game/ConsumerInterface.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/game/Consumer/ConsumerInterface.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/game/Contract.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/game/Distributor/Contract.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/game/Distributor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/game/Distributor/Distributor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/game/DistributorFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/game/Distributor/DistributorFactory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/game/DistributorInterface.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/game/Distributor/DistributorInterface.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/game/FactoryCreator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/game/FactoryCreator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/inputclasses/CostsChanges.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/inputclasses/DistributorChanges.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/inputclasses/DistributorInput.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/inputclasses/DistributorInput.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/inputclasses/InitialData.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/inputclasses/InitialData.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/inputclasses/MonthlyUpdates.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/inputclasses/MonthlyUpdates.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ouputclasses/DistributorOutput.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ouputclasses/DistributorOutput.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ouputclasses/Output.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ouputclasses/Output.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -69,6 +54,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Class" />
+        <option value="Interface" />
       </list>
     </option>
   </component>
@@ -84,11 +70,12 @@
   </component>
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="dart.analysis.tool.window.visible" value="false" />
     <property name="extract.method.default.visibility" value="private" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../325cd-iuliutza/genericitate" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
@@ -100,11 +87,11 @@
       <recent name="$PROJECT_DIR$/src" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.Test">
+  <component name="RunManager" selected="Application.Main">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Main" />
       <module name="proiect-etapa1" />
-      <option name="PROGRAM_PARAMETERS" value="basic_11.json out_11.json" />
+      <option name="PROGRAM_PARAMETERS" value="basic_6.json out_6.json" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -112,6 +99,7 @@
     <configuration name="Test" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Test" />
       <module name="proiect-etapa1" />
+      <option name="PROGRAM_PARAMETERS" value="basic_4 out_4" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -133,8 +121,8 @@
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.Test" />
         <item itemvalue="Application.Main" />
+        <item itemvalue="Application.Test" />
       </list>
     </recent_temporary>
   </component>
@@ -156,7 +144,14 @@
       <workItem from="1608116773620" duration="174000" />
       <workItem from="1610364064158" duration="11000" />
       <workItem from="1610385161456" duration="136000" />
-      <workItem from="1610385319825" duration="741000" />
+      <workItem from="1610385319825" duration="3937000" />
+      <workItem from="1610442574902" duration="392000" />
+      <workItem from="1610450660526" duration="6507000" />
+      <workItem from="1610463853716" duration="733000" />
+      <workItem from="1610553378484" duration="7232000" />
+      <workItem from="1610694781184" duration="6646000" />
+      <workItem from="1610892872245" duration="8000" />
+      <workItem from="1611146721308" duration="12530000" />
     </task>
     <task id="LOCAL-00001" summary="checkstyle of output classes on point">
       <created>1607865311119</created>
@@ -207,7 +202,14 @@
       <option name="project" value="LOCAL" />
       <updated>1607940676404</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="START ETAPA 2">
+      <created>1610386559596</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1610386559596</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -219,54 +221,60 @@
     <MESSAGE value="done!" />
     <MESSAGE value="readme part 1" />
     <MESSAGE value="readme part 2" />
-    <option name="LAST_COMMIT_MESSAGE" value="readme part 2" />
+    <MESSAGE value="START ETAPA 2" />
+    <option name="LAST_COMMIT_MESSAGE" value="START ETAPA 2" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="298" y="183" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1607844537761">
+    <state x="298" y="183" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1611166476920">
       <screen x="0" y="27" width="1680" height="989" />
     </state>
-    <state x="298" y="183" key="#com.intellij.execution.impl.EditConfigurationsDialog/1680.0.1920.1080/0.27.1680.989@0.27.1680.989" timestamp="1607844537761" />
-    <state x="648" y="232" width="374" height="592" key="#com.intellij.ide.util.MemberChooser" timestamp="1607862453987">
-      <screen x="0" y="27" width="3600" height="989" />
+    <state x="298" y="183" key="#com.intellij.execution.impl.EditConfigurationsDialog/1680.0.1920.1080/0.27.1680.989@0.27.1680.989" timestamp="1611166476920" />
+    <state x="302" y="232" width="565" height="620" key="#com.intellij.ide.util.MemberChooser" timestamp="1611166181385">
+      <screen x="0" y="27" width="1680" height="989" />
     </state>
     <state x="648" y="232" width="374" height="592" key="#com.intellij.ide.util.MemberChooser/0.27.3600.989@0.27.3600.989" timestamp="1607862453987" />
+    <state x="302" y="232" width="565" height="620" key="#com.intellij.ide.util.MemberChooser/1680.0.1920.1080/0.27.1680.989@0.27.1680.989" timestamp="1611166181385" />
     <state x="593" y="419" width="494" height="226" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes" timestamp="1607865588637">
       <screen x="0" y="27" width="3600" height="989" />
     </state>
     <state x="593" y="419" width="494" height="226" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/0.27.3600.989@0.27.3600.989" timestamp="1607865588637" />
-    <state x="160" y="70" width="912" height="916" key="CommitChangelistDialog2" timestamp="1607940676244">
+    <state x="432" y="27" width="796" height="989" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1610387147609">
+      <screen x="0" y="27" width="1680" height="989" />
+    </state>
+    <state x="432" y="27" width="796" height="989" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/1680.0.1920.1080/0.27.1680.989@0.27.1680.989" timestamp="1610387147609" />
+    <state x="160" y="70" width="912" height="916" key="CommitChangelistDialog2" timestamp="1610386558823">
       <screen x="0" y="27" width="1680" height="989" />
     </state>
     <state x="343" y="70" width="984" height="916" key="CommitChangelistDialog2/0.27.3600.989@0.27.3600.989" timestamp="1607866305493" />
-    <state x="160" y="70" width="912" height="916" key="CommitChangelistDialog2/1680.0.1920.1080/0.27.1680.989@0.27.1680.989" timestamp="1607940676244" />
-    <state x="1680" y="272" width="735" height="520" key="FileChooserDialogImpl" timestamp="1607863372841">
-      <screen x="0" y="27" width="3600" height="989" />
+    <state x="160" y="70" width="912" height="916" key="CommitChangelistDialog2/1680.0.1920.1080/0.27.1680.989@0.27.1680.989" timestamp="1610386558823" />
+    <state x="467" y="272" width="735" height="520" key="FileChooserDialogImpl" timestamp="1610442591304">
+      <screen x="0" y="27" width="1680" height="989" />
     </state>
     <state x="1680" y="272" key="FileChooserDialogImpl/0.27.3600.989@0.27.3600.989" timestamp="1607863372840" />
-    <state x="467" y="272" width="735" height="520" key="FileChooserDialogImpl/1680.0.1920.1080/0.27.1680.989@0.27.1680.989" timestamp="1607844499078" />
-    <state width="1874" height="18" key="GridCell.Tab.0.bottom" timestamp="1607893952555">
+    <state x="467" y="272" width="735" height="520" key="FileChooserDialogImpl/1680.0.1920.1080/0.27.1680.989@0.27.1680.989" timestamp="1610442591304" />
+    <state width="1634" height="101" key="GridCell.Tab.0.bottom" timestamp="1611166480299">
       <screen x="0" y="27" width="1680" height="989" />
     </state>
     <state width="1634" height="194" key="GridCell.Tab.0.bottom/0.27.3600.989@0.27.3600.989" timestamp="1607869227090" />
-    <state width="1874" height="18" key="GridCell.Tab.0.bottom/1680.0.1920.1080/0.27.1680.989@0.27.1680.989" timestamp="1607893952555" />
+    <state width="1634" height="101" key="GridCell.Tab.0.bottom/1680.0.1920.1080/0.27.1680.989@0.27.1680.989" timestamp="1611166480299" />
     <state width="1874" height="707" key="GridCell.Tab.0.bottom/1680.0.1920.1080/0.27.1680.989@1680.0.1920.1080" timestamp="1607888987351" />
-    <state width="1874" height="18" key="GridCell.Tab.0.center" timestamp="1607893952554">
+    <state width="1634" height="101" key="GridCell.Tab.0.center" timestamp="1611166480299">
       <screen x="0" y="27" width="1680" height="989" />
     </state>
     <state width="1634" height="194" key="GridCell.Tab.0.center/0.27.3600.989@0.27.3600.989" timestamp="1607869227089" />
-    <state width="1874" height="18" key="GridCell.Tab.0.center/1680.0.1920.1080/0.27.1680.989@0.27.1680.989" timestamp="1607893952554" />
+    <state width="1634" height="101" key="GridCell.Tab.0.center/1680.0.1920.1080/0.27.1680.989@0.27.1680.989" timestamp="1611166480299" />
     <state width="1874" height="707" key="GridCell.Tab.0.center/1680.0.1920.1080/0.27.1680.989@1680.0.1920.1080" timestamp="1607888987350" />
-    <state width="1874" height="18" key="GridCell.Tab.0.left" timestamp="1607893952554">
+    <state width="1634" height="101" key="GridCell.Tab.0.left" timestamp="1611166480298">
       <screen x="0" y="27" width="1680" height="989" />
     </state>
     <state width="1634" height="194" key="GridCell.Tab.0.left/0.27.3600.989@0.27.3600.989" timestamp="1607869227089" />
-    <state width="1874" height="18" key="GridCell.Tab.0.left/1680.0.1920.1080/0.27.1680.989@0.27.1680.989" timestamp="1607893952554" />
+    <state width="1634" height="101" key="GridCell.Tab.0.left/1680.0.1920.1080/0.27.1680.989@0.27.1680.989" timestamp="1611166480298" />
     <state width="1874" height="707" key="GridCell.Tab.0.left/1680.0.1920.1080/0.27.1680.989@1680.0.1920.1080" timestamp="1607888987350" />
-    <state width="1874" height="18" key="GridCell.Tab.0.right" timestamp="1607893952554">
+    <state width="1634" height="101" key="GridCell.Tab.0.right" timestamp="1611166480299">
       <screen x="0" y="27" width="1680" height="989" />
     </state>
     <state width="1634" height="194" key="GridCell.Tab.0.right/0.27.3600.989@0.27.3600.989" timestamp="1607869227090" />
-    <state width="1874" height="18" key="GridCell.Tab.0.right/1680.0.1920.1080/0.27.1680.989@0.27.1680.989" timestamp="1607893952554" />
+    <state width="1634" height="101" key="GridCell.Tab.0.right/1680.0.1920.1080/0.27.1680.989@0.27.1680.989" timestamp="1611166480299" />
     <state width="1874" height="707" key="GridCell.Tab.0.right/1680.0.1920.1080/0.27.1680.989@1680.0.1920.1080" timestamp="1607888987351" />
     <state width="1634" height="339" key="GridCell.Tab.1.bottom" timestamp="1607869227081">
       <screen x="0" y="27" width="3600" height="989" />
