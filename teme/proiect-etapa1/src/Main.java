@@ -95,7 +95,7 @@ public class  Main {
         }
         for (int k = 0; k <= input.getNumberOfTurns(); k++) {
             if (k == 0) {
-                //first round, distributors select a producer or more
+                //distributors select a producer or more
                 for (Distributor distributor : distributors) {
                     distributor.chooseProducers(producers);
                 }

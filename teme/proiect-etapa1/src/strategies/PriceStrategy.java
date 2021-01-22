@@ -8,7 +8,7 @@ import java.util.List;
 
 public final class PriceStrategy implements Strategy {
     @Override
-    public Producer chooseStrategy(List<Producer> producers) {
+    public Producer chooseProducer(List<Producer> producers) {
         double min = Constants.MIN;
         QuantityStrategy strategy = new QuantityStrategy();
         List<Producer> producersToQuantity = new ArrayList<>();
@@ -26,7 +26,7 @@ public final class PriceStrategy implements Strategy {
         }
 
         if (producersToQuantity.size() != 1) {
-            return strategy.chooseStrategy(producersToQuantity);
+            return strategy.chooseProducer(producersToQuantity);
         } else {
             return producersToQuantity.get(0);
         }

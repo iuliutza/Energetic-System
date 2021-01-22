@@ -2,7 +2,7 @@ Starting audit...
 [ERROR] /home/iulia/IdeaProjects/Project-etapa1/teme/proiect-etapa1/./src/game/producer/Producer.java:131:36: 'energyPerDistributor' hides a field. [HiddenField]
 [ERROR] /home/iulia/IdeaProjects/Project-etapa1/teme/proiect-etapa1/./src/game/Constants.java:3:1: Utility classes should not have a public or default constructor. [HideUtilityClassConstructor]
 [ERROR] /home/iulia/IdeaProjects/Project-etapa1/teme/proiect-etapa1/./src/Main.java:20:1: Utility classes should not have a public or default constructor. [HideUtilityClassConstructor]
-[ERROR] /home/iulia/IdeaProjects/Project-etapa1/teme/proiect-etapa1/./src/Main.java:48:5: Method length is 186 lines (max allowed is 150). [MethodLength]
+[ERROR] /home/iulia/IdeaProjects/Project-etapa1/teme/proiect-etapa1/./src/Main.java:48:5: Method length is 184 lines (max allowed is 150). [MethodLength]
 [ERROR] /home/iulia/IdeaProjects/Project-etapa1/teme/proiect-etapa1/./src/inputclasses/InputLoader.java:29:40: 'inputPath' hides a field. [HiddenField]
 Audit done.
 Checkstyle ends with 5 errors.

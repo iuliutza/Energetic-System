@@ -17,6 +17,6 @@ public final class StrategyContext {
      * @return the chosen producer
      */
     public Producer executeStrategy(List<Producer> producers) {
-        return strategy.chooseStrategy(producers);
+        return strategy.chooseProducer(producers);
     }
 }

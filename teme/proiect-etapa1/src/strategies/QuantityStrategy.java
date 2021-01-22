@@ -7,7 +7,7 @@ import java.util.List;
 public final class QuantityStrategy implements Strategy {
 
     @Override
-    public Producer chooseStrategy(List<Producer> producers) {
+    public Producer chooseProducer(List<Producer> producers) {
         int max = 0;
         Producer finalProducer = new Producer();
 

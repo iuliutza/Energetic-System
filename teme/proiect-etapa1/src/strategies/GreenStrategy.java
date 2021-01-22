@@ -8,7 +8,7 @@ import java.util.List;
 public final class GreenStrategy implements Strategy {
 
     @Override
-    public Producer chooseStrategy(List<Producer> producers) {
+    public Producer chooseProducer(List<Producer> producers) {
         List<Producer> producersToPrice = new ArrayList<>();
         PriceStrategy strategy = new PriceStrategy();
 
@@ -18,9 +18,9 @@ public final class GreenStrategy implements Strategy {
             }
         }
         if (producersToPrice.size() > 1) {
-            return strategy.chooseStrategy(producersToPrice);
+            return strategy.chooseProducer(producersToPrice);
         } else if (producersToPrice.size() == 0) {
-            return strategy.chooseStrategy(producers);
+            return strategy.chooseProducer(producers);
         } else {
             return producersToPrice.get(0);
         }

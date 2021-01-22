@@ -11,6 +11,6 @@ public interface Strategy {
      * @param producers list of producers to choose from
      * @return the chosen producer
      */
-    Producer chooseStrategy(List<Producer> producers);
+    Producer chooseProducer(List<Producer> producers);
 
 }
