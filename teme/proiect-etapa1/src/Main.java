@@ -24,19 +24,23 @@ public class  Main {
      * game starts.
      * <p>
      *  The game has the next flow:
-     *  1. Do the cost updates.
-     *  2. Create the new consumers.
-     *  3. Calculate prices of contracts for all the distributors and their profit.
-     *  4. Delete the consumers that have 0 moths remaining in their contracts.
-     *  5. All the consumers will receive their monthly income.
-     *  6. The consumers that do not have a contract will search for the one with the minimum price.
-     *  7. After choosing one, the consumer, as well as the distributor will save this contract.
-     *  8. Consumers will pay their rate, depending on their budget and penalties.
-     *  9. Distributors will receive their rates and then pay their own expenses.
-     *  10. Check if there are any bankrupt consumers. If there are, delete their contracts from the
+     *  * In the first round, distributors choose producers
+     *  * Do the infrastructure cost updates.
+     *  * Create the new consumers.
+     *  * Update the quantity of energy for the producers. If they receive an update,
+     *  the distributors are notified, and they can redo their list of producers.
+     *  * Calculate prices of contracts for all the distributors and their profit.
+     *  * Delete the consumers that have 0 moths remaining in their contracts.
+     *  * All the consumers will receive their monthly income.
+     *  * The consumers that do not have a contract will search for the one with the minimum price.
+     *  * After choosing one, the consumer, as well as the distributor will save this contract.
+     *  * Consumers will pay their rate, depending on their budget and penalties.
+     *  * Distributors will receive their rates and then pay their own expenses.
+     *  * Check if there are any bankrupt consumers. If there are, delete their contracts from the
      *  distributor's list.
-     *  11. Check if there are any bankrupt distributors. If there are, delete all the contracts
+     *  * Check if there are any bankrupt distributors. If there are, delete all the contracts
      *  with their clients.
+     *  * Register the monthly stats and save them for each distributor.
      * </p>
      * <p>
      *     After the game is finished, the results are loaded in the output classes, and printed in
