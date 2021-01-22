@@ -5,45 +5,37 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="62c63c35-2f15-45b0-a391-6e1cec7ed447" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/checker/resources/out/out_4.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/checker/resources/ref/complex_1.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/checker/resources/ref/complex_2.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/checker/resources/ref/complex_3.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/checker/resources/ref/complex_4.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/checker/resources/ref/complex_5.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/entities/EnergyType.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/game/Distributor/Observer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/game/producer/MonthlyStats.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/game/producer/Producer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/game/producer/ProducerInterface.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/inputclasses/ProducerChanges.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/inputclasses/ProducerInput.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ouputclasses/ProducerOutput.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/strategies/GreenStrategy.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/strategies/PriceStrategy.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/strategies/QuantityStrategy.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/strategies/Strategy.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/strategies/StrategyContext.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/checkstyle.txt" beforeDir="false" afterPath="$PROJECT_DIR$/checkstyle.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/game/AbstractFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/game/AbstractFactory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/game/ClientContract.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/game/Consumer/ClientContract.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/game/Consumer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/game/Consumer/Consumer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/game/ConsumerFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/game/Consumer/ConsumerFactory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/game/ConsumerInterface.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/game/Consumer/ConsumerInterface.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/game/Contract.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/game/Distributor/Contract.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/game/Distributor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/game/Distributor/Distributor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/game/DistributorFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/game/Distributor/DistributorFactory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/game/DistributorInterface.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/game/Distributor/DistributorInterface.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/game/Constants.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/game/Constants.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/game/Consumer/ClientContract.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/game/consumer/ClientContract.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/game/Consumer/Consumer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/game/consumer/Consumer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/game/Consumer/ConsumerFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/game/consumer/ConsumerFactory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/game/Consumer/ConsumerInterface.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/game/consumer/ConsumerInterface.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/game/Distributor/Contract.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/game/distributor/Contract.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/game/Distributor/Distributor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/game/distributor/Distributor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/game/Distributor/DistributorFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/game/distributor/DistributorFactory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/game/Distributor/DistributorInterface.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/game/distributor/DistributorInterface.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/game/Distributor/Observer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/game/distributor/Observer.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/game/FactoryCreator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/game/FactoryCreator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/inputclasses/CostsChanges.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/inputclasses/DistributorChanges.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/game/producer/MonthlyStats.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/game/producer/MonthlyStats.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/game/producer/Producer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/game/producer/Producer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/game/producer/ProducerInterface.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/game/producer/ProducerInterface.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/inputclasses/DistributorInput.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/inputclasses/DistributorInput.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/inputclasses/InitialData.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/inputclasses/InitialData.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/inputclasses/MonthlyUpdates.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/inputclasses/MonthlyUpdates.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/inputclasses/ProducerChanges.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/inputclasses/ProducerChanges.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/inputclasses/ProducerInput.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/inputclasses/ProducerInput.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/ouputclasses/DistributorOutput.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ouputclasses/DistributorOutput.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/ouputclasses/Output.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ouputclasses/Output.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ouputclasses/ProducerOutput.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ouputclasses/ProducerOutput.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/strategies/EnergyChoiceStrategyType.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/strategies/EnergyChoiceStrategyType.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/strategies/GreenStrategy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/strategies/GreenStrategy.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/strategies/PriceStrategy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/strategies/PriceStrategy.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/strategies/QuantityStrategy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/strategies/QuantityStrategy.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/strategies/Strategy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/strategies/Strategy.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/strategies/StrategyContext.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/strategies/StrategyContext.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -87,11 +79,11 @@
       <recent name="$PROJECT_DIR$/src" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.Main">
+  <component name="RunManager" selected="Application.Test">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Main" />
       <module name="proiect-etapa1" />
-      <option name="PROGRAM_PARAMETERS" value="basic_6.json out_6.json" />
+      <option name="PROGRAM_PARAMETERS" value="basic_12.json out_12.json" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -104,13 +96,15 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
+    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
           <option name="containerStateName" value="" />
         </value>
       </option>
-      <option name="TEST_OBJECT" value="class" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -121,8 +115,8 @@
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.Main" />
         <item itemvalue="Application.Test" />
+        <item itemvalue="Application.Main" />
       </list>
     </recent_temporary>
   </component>
@@ -151,7 +145,8 @@
       <workItem from="1610553378484" duration="7232000" />
       <workItem from="1610694781184" duration="6646000" />
       <workItem from="1610892872245" duration="8000" />
-      <workItem from="1611146721308" duration="12530000" />
+      <workItem from="1611146721308" duration="13198000" />
+      <workItem from="1611306196837" duration="6580000" />
     </task>
     <task id="LOCAL-00001" summary="checkstyle of output classes on point">
       <created>1607865311119</created>
@@ -209,7 +204,14 @@
       <option name="project" value="LOCAL" />
       <updated>1610386559596</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="basically the code works, it still needs changes">
+      <created>1611166595845</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1611166595845</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -222,13 +224,18 @@
     <MESSAGE value="readme part 1" />
     <MESSAGE value="readme part 2" />
     <MESSAGE value="START ETAPA 2" />
-    <option name="LAST_COMMIT_MESSAGE" value="START ETAPA 2" />
+    <MESSAGE value="basically the code works, it still needs changes" />
+    <option name="LAST_COMMIT_MESSAGE" value="basically the code works, it still needs changes" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="298" y="183" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1611166476920">
+    <state x="540" y="27" width="589" height="989" key="#Code_Folding" timestamp="1611167073269">
       <screen x="0" y="27" width="1680" height="989" />
     </state>
-    <state x="298" y="183" key="#com.intellij.execution.impl.EditConfigurationsDialog/1680.0.1920.1080/0.27.1680.989@0.27.1680.989" timestamp="1611166476920" />
+    <state x="540" y="27" width="589" height="989" key="#Code_Folding/1680.0.1920.1080/0.27.1680.989@0.27.1680.989" timestamp="1611167073269" />
+    <state x="298" y="183" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1611306296701">
+      <screen x="0" y="27" width="1680" height="989" />
+    </state>
+    <state x="298" y="183" key="#com.intellij.execution.impl.EditConfigurationsDialog/1680.0.1920.1080/0.27.1680.989@0.27.1680.989" timestamp="1611306296701" />
     <state x="302" y="232" width="565" height="620" key="#com.intellij.ide.util.MemberChooser" timestamp="1611166181385">
       <screen x="0" y="27" width="1680" height="989" />
     </state>
@@ -242,74 +249,86 @@
       <screen x="0" y="27" width="1680" height="989" />
     </state>
     <state x="432" y="27" width="796" height="989" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/1680.0.1920.1080/0.27.1680.989@0.27.1680.989" timestamp="1610387147609" />
-    <state x="160" y="70" width="912" height="916" key="CommitChangelistDialog2" timestamp="1610386558823">
+    <state x="160" y="70" width="912" height="916" key="CommitChangelistDialog2" timestamp="1611166595686">
       <screen x="0" y="27" width="1680" height="989" />
     </state>
     <state x="343" y="70" width="984" height="916" key="CommitChangelistDialog2/0.27.3600.989@0.27.3600.989" timestamp="1607866305493" />
-    <state x="160" y="70" width="912" height="916" key="CommitChangelistDialog2/1680.0.1920.1080/0.27.1680.989@0.27.1680.989" timestamp="1610386558823" />
+    <state x="160" y="70" width="912" height="916" key="CommitChangelistDialog2/1680.0.1920.1080/0.27.1680.989@0.27.1680.989" timestamp="1611166595686" />
     <state x="467" y="272" width="735" height="520" key="FileChooserDialogImpl" timestamp="1610442591304">
       <screen x="0" y="27" width="1680" height="989" />
     </state>
     <state x="1680" y="272" key="FileChooserDialogImpl/0.27.3600.989@0.27.3600.989" timestamp="1607863372840" />
     <state x="467" y="272" width="735" height="520" key="FileChooserDialogImpl/1680.0.1920.1080/0.27.1680.989@0.27.1680.989" timestamp="1610442591304" />
-    <state width="1634" height="101" key="GridCell.Tab.0.bottom" timestamp="1611166480299">
+    <state width="1634" height="257" key="GridCell.Tab.0.bottom" timestamp="1611312467930">
       <screen x="0" y="27" width="1680" height="989" />
     </state>
     <state width="1634" height="194" key="GridCell.Tab.0.bottom/0.27.3600.989@0.27.3600.989" timestamp="1607869227090" />
-    <state width="1634" height="101" key="GridCell.Tab.0.bottom/1680.0.1920.1080/0.27.1680.989@0.27.1680.989" timestamp="1611166480299" />
+    <state width="1634" height="257" key="GridCell.Tab.0.bottom/1680.0.1920.1080/0.27.1680.989@0.27.1680.989" timestamp="1611312467930" />
     <state width="1874" height="707" key="GridCell.Tab.0.bottom/1680.0.1920.1080/0.27.1680.989@1680.0.1920.1080" timestamp="1607888987351" />
-    <state width="1634" height="101" key="GridCell.Tab.0.center" timestamp="1611166480299">
+    <state width="1634" height="257" key="GridCell.Tab.0.center" timestamp="1611312467930">
       <screen x="0" y="27" width="1680" height="989" />
     </state>
     <state width="1634" height="194" key="GridCell.Tab.0.center/0.27.3600.989@0.27.3600.989" timestamp="1607869227089" />
-    <state width="1634" height="101" key="GridCell.Tab.0.center/1680.0.1920.1080/0.27.1680.989@0.27.1680.989" timestamp="1611166480299" />
+    <state width="1634" height="257" key="GridCell.Tab.0.center/1680.0.1920.1080/0.27.1680.989@0.27.1680.989" timestamp="1611312467930" />
     <state width="1874" height="707" key="GridCell.Tab.0.center/1680.0.1920.1080/0.27.1680.989@1680.0.1920.1080" timestamp="1607888987350" />
-    <state width="1634" height="101" key="GridCell.Tab.0.left" timestamp="1611166480298">
+    <state width="1634" height="257" key="GridCell.Tab.0.left" timestamp="1611312467930">
       <screen x="0" y="27" width="1680" height="989" />
     </state>
     <state width="1634" height="194" key="GridCell.Tab.0.left/0.27.3600.989@0.27.3600.989" timestamp="1607869227089" />
-    <state width="1634" height="101" key="GridCell.Tab.0.left/1680.0.1920.1080/0.27.1680.989@0.27.1680.989" timestamp="1611166480298" />
+    <state width="1634" height="257" key="GridCell.Tab.0.left/1680.0.1920.1080/0.27.1680.989@0.27.1680.989" timestamp="1611312467930" />
     <state width="1874" height="707" key="GridCell.Tab.0.left/1680.0.1920.1080/0.27.1680.989@1680.0.1920.1080" timestamp="1607888987350" />
-    <state width="1634" height="101" key="GridCell.Tab.0.right" timestamp="1611166480299">
+    <state width="1634" height="257" key="GridCell.Tab.0.right" timestamp="1611312467930">
       <screen x="0" y="27" width="1680" height="989" />
     </state>
     <state width="1634" height="194" key="GridCell.Tab.0.right/0.27.3600.989@0.27.3600.989" timestamp="1607869227090" />
-    <state width="1634" height="101" key="GridCell.Tab.0.right/1680.0.1920.1080/0.27.1680.989@0.27.1680.989" timestamp="1611166480299" />
+    <state width="1634" height="257" key="GridCell.Tab.0.right/1680.0.1920.1080/0.27.1680.989@0.27.1680.989" timestamp="1611312467930" />
     <state width="1874" height="707" key="GridCell.Tab.0.right/1680.0.1920.1080/0.27.1680.989@1680.0.1920.1080" timestamp="1607888987351" />
-    <state width="1634" height="339" key="GridCell.Tab.1.bottom" timestamp="1607869227081">
-      <screen x="0" y="27" width="3600" height="989" />
+    <state width="1634" height="339" key="GridCell.Tab.1.bottom" timestamp="1611309217745">
+      <screen x="0" y="27" width="1680" height="989" />
     </state>
     <state width="1634" height="339" key="GridCell.Tab.1.bottom/0.27.3600.989@0.27.3600.989" timestamp="1607869227081" />
-    <state width="1634" height="339" key="GridCell.Tab.1.center" timestamp="1607869227081">
-      <screen x="0" y="27" width="3600" height="989" />
+    <state width="1634" height="339" key="GridCell.Tab.1.bottom/1680.0.1920.1080/0.27.1680.989@0.27.1680.989" timestamp="1611309217745" />
+    <state width="1634" height="339" key="GridCell.Tab.1.center" timestamp="1611309217745">
+      <screen x="0" y="27" width="1680" height="989" />
     </state>
     <state width="1634" height="339" key="GridCell.Tab.1.center/0.27.3600.989@0.27.3600.989" timestamp="1607869227081" />
-    <state width="1634" height="339" key="GridCell.Tab.1.left" timestamp="1607869227080">
-      <screen x="0" y="27" width="3600" height="989" />
+    <state width="1634" height="339" key="GridCell.Tab.1.center/1680.0.1920.1080/0.27.1680.989@0.27.1680.989" timestamp="1611309217745" />
+    <state width="1634" height="339" key="GridCell.Tab.1.left" timestamp="1611309217745">
+      <screen x="0" y="27" width="1680" height="989" />
     </state>
     <state width="1634" height="339" key="GridCell.Tab.1.left/0.27.3600.989@0.27.3600.989" timestamp="1607869227080" />
-    <state width="1634" height="339" key="GridCell.Tab.1.right" timestamp="1607869227081">
-      <screen x="0" y="27" width="3600" height="989" />
+    <state width="1634" height="339" key="GridCell.Tab.1.left/1680.0.1920.1080/0.27.1680.989@0.27.1680.989" timestamp="1611309217745" />
+    <state width="1634" height="339" key="GridCell.Tab.1.right" timestamp="1611309217745">
+      <screen x="0" y="27" width="1680" height="989" />
     </state>
     <state width="1634" height="339" key="GridCell.Tab.1.right/0.27.3600.989@0.27.3600.989" timestamp="1607869227081" />
+    <state width="1634" height="339" key="GridCell.Tab.1.right/1680.0.1920.1080/0.27.1680.989@0.27.1680.989" timestamp="1611309217745" />
     <state x="329" y="160" width="1022" height="737" key="SettingsEditor" timestamp="1607844503670">
       <screen x="0" y="27" width="1680" height="989" />
     </state>
     <state x="329" y="160" width="1022" height="737" key="SettingsEditor/1680.0.1920.1080/0.27.1680.989@0.27.1680.989" timestamp="1607844503670" />
-    <state x="203" y="261" width="528" height="535" key="Vcs.Push.Dialog.v2" timestamp="1607940680268">
+    <state x="203" y="261" width="528" height="535" key="Vcs.Push.Dialog.v2" timestamp="1611166599429">
       <screen x="0" y="27" width="1680" height="989" />
     </state>
     <state x="435" y="261" width="800" height="535" key="Vcs.Push.Dialog.v2/0.27.3600.989@0.27.3600.989" timestamp="1607866308487" />
-    <state x="203" y="261" width="528" height="535" key="Vcs.Push.Dialog.v2/1680.0.1920.1080/0.27.1680.989@0.27.1680.989" timestamp="1607940680268" />
+    <state x="203" y="261" width="528" height="535" key="Vcs.Push.Dialog.v2/1680.0.1920.1080/0.27.1680.989@0.27.1680.989" timestamp="1611166599429" />
     <state x="741" y="436" width="428" height="177" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1607890167249">
       <screen x="0" y="27" width="1680" height="989" />
     </state>
     <state x="741" y="436" width="428" height="177" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/1680.0.1920.1080/0.27.1680.989@0.27.1680.989" timestamp="1607890167249" />
-    <state x="2002" y="27" width="1232" height="989" key="dock-window-1" timestamp="1607940093219">
+    <state x="321" y="244" width="1027" height="654" key="com.intellij.xdebugger.impl.breakpoints.ui.BreakpointsDialogFactory$2" timestamp="1611309178240">
+      <screen x="0" y="27" width="1680" height="989" />
+    </state>
+    <state x="321" y="244" width="1027" height="654" key="com.intellij.xdebugger.impl.breakpoints.ui.BreakpointsDialogFactory$2/1680.0.1920.1080/0.27.1680.989@0.27.1680.989" timestamp="1611309178240" />
+    <state x="1922" y="135" width="1153" height="827" maximized="true" key="dock-window-1" timestamp="1611306847450">
       <screen x="1680" y="0" width="1920" height="1080" />
     </state>
     <state x="2082" y="64" width="1308" height="847" maximized="true" key="dock-window-1/0.27.3600.989@0.27.3600.989" timestamp="1607866854464" />
-    <state x="2002" y="27" width="1232" height="989" key="dock-window-1/1680.0.1920.1080/0.27.1680.989@0.27.1680.989" timestamp="1607940093219" />
+    <state x="1922" y="135" width="1153" height="827" maximized="true" key="dock-window-1/1680.0.1920.1080/0.27.1680.989@0.27.1680.989" timestamp="1611306847450" />
+    <state x="1935" y="27" width="1153" height="804" maximized="true" key="dock-window-2" timestamp="1611311846844">
+      <screen x="1680" y="0" width="1920" height="1080" />
+    </state>
+    <state x="1935" y="27" width="1153" height="804" maximized="true" key="dock-window-2/1680.0.1920.1080/0.27.1680.989@0.27.1680.989" timestamp="1611311846844" />
     <state x="714" y="325" width="524" height="457" key="extract.method.dialog" timestamp="1607863766430">
       <screen x="0" y="27" width="3600" height="989" />
     </state>
@@ -319,5 +338,15 @@
     </state>
     <state x="503" y="231" width="672" height="678" key="search.everywhere.popup/1680.0.1920.1080/0.27.1680.989@0.27.1680.989" timestamp="1607845665929" />
     <state x="2255" y="223" width="768" height="741" key="search.everywhere.popup/1680.0.1920.1080/0.27.1680.989@1680.0.1920.1080" timestamp="1607888987305" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <breakpoint enabled="true" type="java-exception">
+          <properties class="java.util.ConcurrentModificationException" package="java.util" />
+          <option name="timeStamp" value="4" />
+        </breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

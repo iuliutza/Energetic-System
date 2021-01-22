@@ -1,11 +1,10 @@
 package ouputclasses;
 
-import entities.EnergyType;
 import game.producer.MonthlyStats;
 
 import java.util.List;
 
-public class ProducerOutput {
+public final class ProducerOutput {
     private int id;
     private int maxDistributors;
     private double priceKW;
@@ -73,13 +72,13 @@ public class ProducerOutput {
 
     @Override
     public String toString() {
-        return "ProducerOutput{" +
-                "id=" + id +
-                ", maxDistributors=" + maxDistributors +
-                ", priceKW=" + priceKW +
-                ", energyType='" + energyType + '\'' +
-                ", energyPerDistributor=" + energyPerDistributor +
-                ", monthlyStats=" + monthlyStats +
-                '}';
+        return "ProducerOutput{"
+                + "id=" + id
+                + ", maxDistributors=" + maxDistributors
+                + ", priceKW=" + priceKW
+                + ", energyType='" + energyType + '\''
+                + ", energyPerDistributor=" + energyPerDistributor
+                + ", monthlyStats=" + monthlyStats
+                + '}';
     }
 }

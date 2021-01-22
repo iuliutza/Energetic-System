@@ -1,8 +1,8 @@
 import com.fasterxml.jackson.databind.ObjectMapper;
-import game.*;
-import game.Consumer.Consumer;
-import game.Distributor.Distributor;
-import game.producer.MonthlyStats;
+import game.AbstractFactory;
+import game.FactoryCreator;
+import game.consumer.Consumer;
+import game.distributor.Distributor;
 import game.producer.Producer;
 import inputclasses.DistributorChanges;
 import inputclasses.Input;
@@ -46,14 +46,9 @@ public class  Main {
      * @throws Exception exception
      */
     public static void main(final String[] args) throws Exception {
-//        String pathIn = "./../checker/resources/in/" + args[0];
-        String pathIn = "/home/iulia/IdeaProjects/Project-etapa1/teme/proiect-etapa1/checker/resources/in/"+
-                args[0];
+        String pathIn = "./../checker/resources/in/" + args[0];
         InputLoader inputLoader = new InputLoader(pathIn);
-
-        //Input input = inputLoader.readData(args[0]);
-        Input input = inputLoader.readData(pathIn);
-
+        Input input = inputLoader.readData(args[0]);
         List<Consumer> consumers = new ArrayList<>();
         List<Distributor> distributors = new ArrayList<>();
         List<Producer> producers = new ArrayList<>();
@@ -86,7 +81,7 @@ public class  Main {
             }
         }
         //load producers
-        if(input.getInitialData().getProducers() != null) {
+        if (input.getInitialData().getProducers() != null) {
             for (i = 0; i < input.getInitialData().getProducers().size(); i++) {
                 Producer producer = new Producer(
                         input.getInitialData().getProducers().get(i).getId(),
@@ -98,11 +93,10 @@ public class  Main {
             }
 
         }
-
         for (int k = 0; k <= input.getNumberOfTurns(); k++) {
             if (k == 0) {
                 //first round, distributors select a producer or more
-                for(Distributor distributor : distributors) {
+                for (Distributor distributor : distributors) {
                     distributor.chooseProducers(producers);
                 }
             }
@@ -123,9 +117,7 @@ public class  Main {
                         }
                     }
                 }
-
                 int size = input.getMonthlyUpdates().get(k - 1).getNewConsumers().size();
-
                 if ((input.getMonthlyUpdates().get(k - 1).getNewConsumers().size()) > 0) {
                     for (int j = 0; j < size; j++) {
                        if (consumerFactory != null) {
@@ -150,7 +142,7 @@ public class  Main {
                                 input.getMonthlyUpdates().get(k - 1).getProducerChanges().get(j).
                                         getEnergyPerDistributor());
                         for (int l = 0; l < producers.size(); l++) {
-                            producers.get(l).receiveUpdates(change,producers);
+                            producers.get(l).receiveUpdates(change, producers);
                         }
                     }
                 }
@@ -203,10 +195,9 @@ public class  Main {
                     }
                 }
             }
-
             //monthly stats producer
-            for(Producer producer : producers) {
-                if(k != 0) {
+            for (Producer producer : producers) {
+                if (k != 0) {
                    producer.addStat(k);
                 }
             }
@@ -223,21 +214,19 @@ public class  Main {
         }
         for (Distributor distributor : distributors) {
             DistributorOutput out =
-                    new DistributorOutput(distributor.getId(),distributor.getEnergyNeededKW(),
+                    new DistributorOutput(distributor.getId(), distributor.getEnergyNeededKW(),
                             distributor.getPriceOfContract(), distributor.getBudget(),
                     distributor.getProducerStrategy(), distributor.isBankrupt(),
                             distributor.getContracts());
             outputDistributors.add(out);
         }
-
-        for(Producer producer : producers) {
+        for (Producer producer : producers) {
             ProducerOutput out =
                     new ProducerOutput(producer.getId(), producer.getMaxDistributors(),
                             producer.getPriceKW(), producer.getEnergyType().getLabel(),
                             producer.getEnergyPerDistributor(), producer.getMonthlyStats());
             outputProducers.add(out);
         }
-
         Output output = new Output(outputConsumers, outputDistributors, outputProducers);
         ObjectMapper mapper = new ObjectMapper();
         mapper.writerWithDefaultPrettyPrinter().writeValue(new File(args[1]), output);

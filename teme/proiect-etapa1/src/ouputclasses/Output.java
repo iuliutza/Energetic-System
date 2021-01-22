@@ -3,6 +3,7 @@ package ouputclasses;
 import com.fasterxml.jackson.annotation.JsonPropertyOrder;
 
 import java.util.List;
+
 @JsonPropertyOrder({
         "consumers",
         "distributors",
@@ -46,10 +47,10 @@ public final class Output {
 
     @Override
     public String toString() {
-        return "Output{" +
-                "consumers=" + consumers +
-                ", distributors=" + distributors +
-                ", energyProducers=" + energyProducers +
-                '}';
+        return "Output{"
+                + "consumers=" + consumers
+                + ", distributors=" + distributors
+                + ", energyProducers=" + energyProducers
+                + '}';
     }
 }

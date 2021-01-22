@@ -7,7 +7,8 @@ public final class InitialData {
     private List<DistributorInput> distributors;
     private List<ProducerInput> producers;
 
-    public InitialData() { }
+    public InitialData() {
+    }
 
     public InitialData(final List<ConsumerInput> consumers,
                        final List<DistributorInput> distributors,
@@ -43,10 +44,10 @@ public final class InitialData {
 
     @Override
     public String toString() {
-        return "InitialData{" +
-                "consumers=" + consumers +
-                ", distributors=" + distributors +
-                ", producers=" + producers +
-                '}';
+        return "InitialData{"
+                + "consumers=" + consumers
+                + ", distributors=" + distributors
+                + ", producers=" + producers
+                + '}';
     }
 }

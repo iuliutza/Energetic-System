@@ -1,13 +1,14 @@
 package inputclasses;
 
-public class ProducerInput {
+public final class ProducerInput {
     private int id;
     private String energyType;
     private int maxDistributors;
     private double priceKW;
     private int energyPerDistributor;
 
-    public ProducerInput() { }
+    public ProducerInput() {
+    }
 
     public ProducerInput(int id, String energyType, int maxDistributors, double priceKW,
                          int energyPerDistributor) {
@@ -60,8 +61,8 @@ public class ProducerInput {
 
     @Override
     public String toString() {
-        return "ProducerInput{" +
-                "id=" + id
+        return "ProducerInput{"
+                + "id=" + id
                 + ", energyType='" + energyType + '\''
                 + ", maxDistributors=" + maxDistributors
                 + ", priceKW=" + priceKW

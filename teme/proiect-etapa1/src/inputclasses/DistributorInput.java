@@ -6,7 +6,9 @@ public final class DistributorInput extends ShowEntity {
     private int energyNeededKW;
     private String producerStrategy;
 
-    public DistributorInput() { super(); }
+    public DistributorInput() {
+        super();
+    }
 
     public DistributorInput(final int id, final long initialBudget, int contractLength,
                             long initialInfrastructureCost, int energyNeededKW,
@@ -37,11 +39,11 @@ public final class DistributorInput extends ShowEntity {
 
     @Override
     public String toString() {
-        return "DistributorInput{" +
-                "contractLength=" + contractLength +
-                ", initialInfrastructureCost=" + initialInfrastructureCost +
-                ", energyNeededKW=" + energyNeededKW +
-                ", producerStrategy='" + producerStrategy + '\'' +
-                '}';
+        return "DistributorInput{"
+                + "contractLength=" + contractLength
+                + ", initialInfrastructureCost=" + initialInfrastructureCost
+                + ", energyNeededKW=" + energyNeededKW
+                + ", producerStrategy='" + producerStrategy + '\''
+                + '}';
     }
 }

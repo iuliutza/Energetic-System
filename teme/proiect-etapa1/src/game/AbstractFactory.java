@@ -1,7 +1,7 @@
 package game;
 
-import game.Consumer.Consumer;
-import game.Distributor.Distributor;
+import game.consumer.Consumer;
+import game.distributor.Distributor;
 
 public abstract class AbstractFactory {
     /**

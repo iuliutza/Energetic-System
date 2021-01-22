@@ -1,7 +1,7 @@
 package game;
 
-import game.Consumer.ConsumerFactory;
-import game.Distributor.DistributorFactory;
+import game.consumer.ConsumerFactory;
+import game.distributor.DistributorFactory;
 
 public final class FactoryCreator {
     private static FactoryCreator instance;

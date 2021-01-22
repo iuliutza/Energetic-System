@@ -1,4 +1,4 @@
-package game.Distributor;
+package game.distributor;
 
 import game.producer.Producer;
 
@@ -48,7 +48,14 @@ public interface DistributorInterface {
      */
     void deleteContract(int id);
 
+    /**
+     * Calculates the production cost
+     */
     void calculateProductionCost();
 
+    /**
+     * Chooses the producers according to the distributor's strategy
+     * @param producers the list of all producers
+     */
     void chooseProducers(List<Producer> producers);
 }

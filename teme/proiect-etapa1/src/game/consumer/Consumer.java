@@ -1,7 +1,7 @@
-package game.Consumer;
+package game.consumer;
 
 import game.Constants;
-import game.Distributor.Distributor;
+import game.distributor.Distributor;
 import game.Entity;
 
 import java.util.List;
@@ -107,14 +107,13 @@ public final class Consumer extends Entity implements ConsumerInterface {
         }
 
         //case: consumer has already one month in which he couldn't pay the rate
-        //AICI MAI AM DE LUCRAT!!!!!!!
         if (penalty == 1) {
             long price;
 
-            if(this.lastDistributor != this.contract.getDistributorId()) {
-                price  = Math.round(Math.floor(this.remainingPayment * Constants.PENALTY_PERCENTAGE));
-            }
-            else {
+            if (this.lastDistributor != this.contract.getDistributorId()) {
+                price  = Math.round(Math.floor(this.remainingPayment
+                        * Constants.PENALTY_PERCENTAGE));
+            } else {
                 price = Math.round(Math.floor(this.remainingPayment * Constants.PENALTY_PERCENTAGE)
                         + this.contract.getPrice());
             }

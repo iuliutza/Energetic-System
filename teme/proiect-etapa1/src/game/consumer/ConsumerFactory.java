@@ -1,19 +1,18 @@
-package game.Distributor;
+package game.consumer;
 
 import game.AbstractFactory;
-import game.Consumer.Consumer;
+import game.distributor.Distributor;
 
-public final class DistributorFactory extends AbstractFactory {
-
+public final class ConsumerFactory extends AbstractFactory {
     @Override
     public Consumer createConsumer(final int id, final long budget, final long monthlyIncome) {
-        return null;
+        return new Consumer(id, budget, monthlyIncome);
     }
 
     @Override
     public Distributor createDistributor(final int id, final long budget, final int contractLength,
                                          final long iCost, final int energyNeededKW,
                                          final String strategy) {
-        return new Distributor(id, budget, contractLength, iCost,energyNeededKW,strategy);
+        return null;
     }
 }

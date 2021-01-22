@@ -4,20 +4,20 @@ import game.producer.Producer;
 
 import java.util.List;
 
-public class QuantityStrategy implements Strategy{
+public final class QuantityStrategy implements Strategy {
 
     @Override
     public Producer chooseStrategy(List<Producer> producers) {
-        int min = 999999;
+        int max = 0;
         Producer finalProducer = new Producer();
 
         for (Producer producer : producers) {
-            if(producer.getEnergyPerDistributor() <= min) {
-                min = producer.getEnergyPerDistributor();
+            if (producer.getEnergyPerDistributor() > max) {
+                max = producer.getEnergyPerDistributor();
             }
         }
         for (Producer producer : producers) {
-            if(producer.getEnergyPerDistributor() == min){
+            if (producer.getEnergyPerDistributor() == max) {
                 finalProducer = producer;
                 break;
             }

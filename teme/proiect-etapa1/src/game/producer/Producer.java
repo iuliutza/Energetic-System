@@ -1,13 +1,13 @@
 package game.producer;
 
 import entities.EnergyType;
-import game.Distributor.Distributor;
+import game.distributor.Distributor;
 import inputclasses.ProducerChanges;
 
 import java.util.ArrayList;
 import java.util.List;
 
-public class Producer implements ProducerInterface {
+public final class Producer implements ProducerInterface {
     private int id;
     private EnergyType energyType;
     private int maxDistributors;
@@ -44,6 +44,8 @@ public class Producer implements ProducerInterface {
                 break;
             case "COAL":
                 this.energyType = EnergyType.COAL;
+                break;
+            default:
                 break;
         }
     }
@@ -114,14 +116,14 @@ public class Producer implements ProducerInterface {
 
     @Override
     public String toString() {
-        return "Producer{" +
-                "id=" + id +
-                ", energyType=" + energyType +
-                ", maxDistributors=" + maxDistributors +
-                ", priceKW=" + priceKW +
-                ", energyPerDistributor=" + energyPerDistributor +
-                ", currentDistributors=" + currentDistributors +
-                '}';
+        return "Producer{"
+                + "id=" + id
+                + ", energyType=" + energyType
+                + ", maxDistributors=" + maxDistributors
+                + ", priceKW=" + priceKW
+                + ", energyPerDistributor=" + energyPerDistributor
+                + ", currentDistributors=" + currentDistributors
+                + '}';
     }
 
 
@@ -132,23 +134,22 @@ public class Producer implements ProducerInterface {
     }
 
     @Override
-    public List<Integer> takeDistributorsId () {
+    public List<Integer> takeDistributorsId() {
         List<Integer> ids = new ArrayList<>();
 
-        for(Distributor distributor : currentDistributors) {
+        for (Distributor distributor : currentDistributors) {
             ids.add(distributor.getId());
         }
         return ids;
     }
 
     @Override
-    public void receiveUpdates(ProducerChanges change,List<Producer> producers) {
-        if(change.getId() == this.id) {
+    public void receiveUpdates(ProducerChanges change, List<Producer> producers) {
+        if (change.getId() == this.id) {
             this.updateQuantity(change.getEnergyPerDistributor());
+            this.receivedUpdate = 1;
             notifyAllDistributors(producers);
-        }
-        else
-        {
+        } else {
             this.receivedUpdate = 0;
         }
     }
@@ -161,8 +162,8 @@ public class Producer implements ProducerInterface {
 
     @Override
     public void notifyAllDistributors(List<Producer> producers) {
-        if(receivedUpdate == 1) {
-            for(Distributor distributor : currentDistributors) {
+        if (receivedUpdate == 1) {
+            for (Distributor distributor : currentDistributors) {
                 distributor.update(producers);
             }
         }
@@ -170,10 +171,11 @@ public class Producer implements ProducerInterface {
 
     @Override
     public boolean addDistributor(Distributor distributor) {
-        if(currentDistributors.size() < maxDistributors) {
+        if (currentDistributors.size() < maxDistributors) {
             currentDistributors.add(distributor);
             return true;
+        } else {
+            return false;
         }
-        else return false;
     }
 }

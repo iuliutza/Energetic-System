@@ -1,6 +1,6 @@
-package game.Consumer;
+package game.consumer;
 
-import game.Distributor.Distributor;
+import game.distributor.Distributor;
 
 import java.util.List;
 

@@ -1,10 +1,11 @@
 package inputclasses;
 
-public class ProducerChanges {
+public final class ProducerChanges {
     private int id;
     private int energyPerDistributor;
 
-    public ProducerChanges() { }
+    public ProducerChanges() {
+    }
 
     public ProducerChanges(int id, int energyPerDistributor) {
         this.id = id;
@@ -29,9 +30,9 @@ public class ProducerChanges {
 
     @Override
     public String toString() {
-        return "ProducerChanges{" +
-                "id=" + id +
-                ", energyPerDistributor=" + energyPerDistributor +
-                '}';
+        return "ProducerChanges{"
+                + "id=" + id
+                + ", energyPerDistributor=" + energyPerDistributor
+                + '}';
     }
 }

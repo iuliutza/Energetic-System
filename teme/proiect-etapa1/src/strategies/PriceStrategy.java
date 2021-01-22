@@ -1,14 +1,15 @@
 package strategies;
 
+import game.Constants;
 import game.producer.Producer;
 
 import java.util.ArrayList;
 import java.util.List;
 
-public class PriceStrategy implements Strategy{
+public final class PriceStrategy implements Strategy {
     @Override
     public Producer chooseStrategy(List<Producer> producers) {
-        double min = 999;
+        double min = Constants.MIN;
         QuantityStrategy strategy = new QuantityStrategy();
         List<Producer> producersToQuantity = new ArrayList<>();
 
@@ -19,12 +20,12 @@ public class PriceStrategy implements Strategy{
         }
 
         for (Producer producer : producers) {
-            if(producer.getPriceKW() == min){
+            if (producer.getPriceKW() == min) {
                 producersToQuantity.add(producer);
             }
         }
 
-        if(producersToQuantity.size() != 1) {
+        if (producersToQuantity.size() != 1) {
             return strategy.chooseStrategy(producersToQuantity);
         } else {
             return producersToQuantity.get(0);

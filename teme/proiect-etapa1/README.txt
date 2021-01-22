@@ -1,5 +1,10 @@
-Luta Iulia Andreea
-325 CD
+
+#Dspre
+Proiectare Orientata pe Obiecte, Seriile CA, CD 2020-2021
+
+https://ocw.cs.pub.ro/courses/poo-ca-cd/teme/proiect/etapa2
+
+Student: Luta Iulia Andreea, 325 CD
 
     Pentru inceput am decis sa impart proiectul in trei parti mari : citire,
 scriere si rezolvarea jocului in sine. Pentru fiecare dintre ele am ales sa

@@ -1,6 +1,7 @@
-package game.Distributor;
+package game.distributor;
 
-import game.*;
+import game.Constants;
+import game.Entity;
 import game.producer.Producer;
 import strategies.GreenStrategy;
 import strategies.PriceStrategy;
@@ -10,7 +11,7 @@ import strategies.StrategyContext;
 
 import java.util.ArrayList;
 import java.util.List;
-import java.util.Observable;
+
 
 public final class Distributor extends Entity implements DistributorInterface, Observer {
     private int contractLength;
@@ -52,6 +53,8 @@ public final class Distributor extends Entity implements DistributorInterface, O
                 break;
             case "QUANTITY":
                 this.strategy = new StrategyContext(new QuantityStrategy());
+                break;
+            default:
                 break;
         }
     }
@@ -180,8 +183,8 @@ public final class Distributor extends Entity implements DistributorInterface, O
         if (noOfClients == 0) {
             this.priceOfContract = this.infrastructureCost + this.productionCost + profit;
         } else {
-            this.priceOfContract = Math.round(Math.floor(this.infrastructureCost / noOfClients) +
-                    this.productionCost + profit);
+            this.priceOfContract = Math.round(Math.floor(this.infrastructureCost / noOfClients)
+                    + this.productionCost + profit);
         }
     }
 
@@ -197,10 +200,10 @@ public final class Distributor extends Entity implements DistributorInterface, O
     @Override
     public void calculateProductionCost() {
         long cost = 0;
-        for( Producer producer : this.chosenProducers) {
+        for (Producer producer : this.chosenProducers) {
             cost += producer.getEnergyPerDistributor() * producer.getPriceKW();
         }
-        this.productionCost = Math.round(Math.floor(cost/10));
+        this.productionCost = Math.round(Math.floor(cost / Constants.PERCENTAGE));
     }
 
     @Override
@@ -242,29 +245,31 @@ public final class Distributor extends Entity implements DistributorInterface, O
     public void chooseProducers(List<Producer> producers) {
         List<Producer> copy = new ArrayList<>();
         List<Producer> toRemove = new ArrayList<>();
-        Producer producerBuff ;
+        Producer producerBuff;
         copy.addAll(producers);
 
-        while(this.addedEnergy < this.energyNeededKW) {
+        while (this.addedEnergy < this.energyNeededKW) {
             producerBuff = strategy.executeStrategy(copy);
             for (Producer producer : copy) {
                 if (producer.getId() == producerBuff.getId()) {
                     if (producer.addDistributor(this)) {
-                        toRemove.add(producer);
+                        toRemove.add(producerBuff);
                         this.chosenProducers.add(producerBuff);
                         this.addedEnergy += producerBuff.getEnergyPerDistributor();
-                    }
-                    else {
-                        toRemove.add(producer);
+                    } else {
+                        toRemove.add(producerBuff);
                     }
                 }
             }
             copy.removeAll(toRemove);
         }
+        copy.clear();
     }
 
     @Override
     public void update(List<Producer> producers) {
+
+        this.chosenProducers.clear();
         chooseProducers(producers);
     }
 }

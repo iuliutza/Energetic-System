@@ -1,6 +1,6 @@
 package ouputclasses;
 import com.fasterxml.jackson.annotation.JsonPropertyOrder;
-import game.Distributor.Contract;
+import game.distributor.Contract;
 
 import java.util.List;
 

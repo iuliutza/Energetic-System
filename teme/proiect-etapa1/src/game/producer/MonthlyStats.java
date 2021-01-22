@@ -3,7 +3,7 @@ package game.producer;
 import java.util.ArrayList;
 import java.util.List;
 
-public class MonthlyStats {
+public final class MonthlyStats {
     private int month;
     private List<Integer> distributorsIds;
 
@@ -35,9 +35,9 @@ public class MonthlyStats {
 
     @Override
     public String toString() {
-        return "MonthlyStats{" +
-                "month=" + month +
-                ", distributorsIds=" + distributorsIds +
-                '}';
+        return "MonthlyStats{"
+                + "month=" + month
+                + ", distributorsIds=" + distributorsIds
+                + '}';
     }
 }
