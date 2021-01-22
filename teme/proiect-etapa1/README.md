@@ -41,7 +41,7 @@ urmatoarele clase:
     pentru a retine contractele lor cu consumatorii;
   - ClientContract: acelasi lucru de mai sus doar ca este folosita de
     consumatori;
-  -Constants: clasa in care am trecut toate constantele folosite de-a lungul
+  - Constants: clasa in care am trecut toate constantele folosite de-a lungul
     programului;
 
     (Implementarea entitatilor principale)
@@ -57,7 +57,7 @@ urmatoarele clase:
     clasele Distributor si Consumer, clase care o si extind. Entity contine
     elementele comune dintre cele doua entitati ale jocului adica id-ul,
     bugetul si daca a intrat sau nu in faliment;
-  -Consumer: defineste campurile si metodele folosite de consumatori.
+  - Consumer: defineste campurile si metodele folosite de consumatori.
     Mosteneste Entity si implementeaza functii din ConsumerInterface.
     Pe langa campurile mostenite, aceasta contine si monthlyIncome,
     remainingPayment, care se activeaza in cazul in care consumatorul nu poate
